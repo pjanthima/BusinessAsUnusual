@@ -19,6 +19,8 @@ public class OpenGoogle extends CommonMethods {
 
 	@Test
 	public void test001() throws InterruptedException {
+		//This is just for practice
+		
 		oGP.search1();
 		Thread.sleep(2000);// for visual purpose
 	}

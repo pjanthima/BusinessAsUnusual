@@ -17,6 +17,7 @@ public class OpenGooglePractice {
 	@FindBy(name = "btnK")
 	private WebElement searchButton;
 
+	//This is just for practice
 	public void search1() {
 		openGoogle.sendKeys(BaseClass.getProperty("searchSelenium"));
 		searchButton.click();
