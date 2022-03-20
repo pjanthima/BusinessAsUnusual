@@ -12,14 +12,14 @@ public class OpenGooglePractice {
 	}
 
 	@FindBy(name = "q")
-	public WebElement openGoogle;
+	public WebElement googleSearch;
 
 	@FindBy(name = "btnK")
 	private WebElement searchButton;
 
-	//This is just for practice
+	// This is just for practice
 	public void search1() {
-		openGoogle.sendKeys(BaseClass.getProperty("searchSelenium"));
+		googleSearch.sendKeys(BaseClass.getProperty("searchSelenium"));
 		searchButton.click();
 	}
 }
