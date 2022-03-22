@@ -18,6 +18,18 @@ public class RegisterPage {
 
 	@FindBy(id = "submitbtn")
 	private WebElement submitButton;// Tom13
+	
+	//Select Year 1968
+    @FindBy(id="yearbox")
+    private WebElement selectYearOfBirthElement;  //Puthea 11
+    
+  //Select Month April
+    @FindBy(xpath = "//option[@value='April']")
+    private WebElement selectMonthOfBirth; //Puthea 11
+    
+    //Select Month April
+    @FindBy(xpath = "//option[@value='13']")
+    private WebElement selectDateOfBirth; //Puthea 11
 
 	// This is just for practice
 	public void selectCountry_Tom10() {//Tom
@@ -28,4 +40,21 @@ public class RegisterPage {
 	public void clickSubmitButton13() {//Tom
 		submitButton.click();
 	}
+	
+	
+	
+	public void selectYearOfBirth() {
+	    selectYearOfBirthElement.click();
+	}
+	
+	
+	
+	public void selectMonthOfBirth() {
+	    selectMonthOfBirth.click();
+    }
+	
+	public void selectDateOfBirth() {
+	    selectDateOfBirth.click();
+	}
+	
 }
