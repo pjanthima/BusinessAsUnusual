@@ -23,7 +23,15 @@ public class RegisterPage {
 	public void selectCountry_Tom10() {//Tom
 		Select select = new Select(selectCountry);
 		select.selectByValue(BaseClass.getProperty("country"));
+	
 	}
+	
+	@FindBy(id = "checkbox2")//karaket
+	private WebElement selectHobbies;
+	
+	public void selectHobbies7(){
+		selectHobbies.click();
+}
 
 	public void clickSubmitButton13() {//Tom
 		submitButton.click();
