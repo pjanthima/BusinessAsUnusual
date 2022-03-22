@@ -19,6 +19,9 @@ public class RegisterPage {
 	@FindBy(id = "submitbtn")
 	private WebElement submitButton;// Tom13
 
+	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[4]/div/input")
+	private WebElement PhoneNumber;
+	
 	// This is just for practice
 	public void selectCountry_Tom10() {//Tom
 		Select select = new Select(selectCountry);
@@ -27,5 +30,9 @@ public class RegisterPage {
 
 	public void clickSubmitButton13() {//Tom
 		submitButton.click();
+	}
+	
+	public void inputPhoneNumber() {
+		PhoneNumber.sendKeys(BaseClass.getProperty("phoneNumber"));
 	}
 }
