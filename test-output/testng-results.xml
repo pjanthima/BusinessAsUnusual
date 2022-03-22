@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16053" started-at="2022-03-20T04:04:27 EDT" finished-at="2022-03-20T04:04:43 EDT">
+  <suite name="Default suite" duration-ms="13810" started-at="2022-03-22T01:30:09 EDT" finished-at="2022-03-22T01:30:23 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16053" started-at="2022-03-20T04:04:27 EDT" finished-at="2022-03-20T04:04:43 EDT">
-      <class name="practice.OpenGoogle">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:practice.OpenGoogle@462d5aee]" name="setUp" is-config="true" duration-ms="10637" started-at="2022-03-20T04:04:27 EDT" finished-at="2022-03-20T04:04:38 EDT">
+    <test name="Default test" duration-ms="13810" started-at="2022-03-22T01:30:09 EDT" finished-at="2022-03-22T01:30:23 EDT">
+      <class name="practice.DemoSite_Register">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:practice.DemoSite_Register@462d5aee]" name="setUp" is-config="true" duration-ms="10417" started-at="2022-03-22T01:30:09 EDT" finished-at="2022-03-22T01:30:19 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test001()[pri:0, instance:practice.OpenGoogle@462d5aee]" name="test001" duration-ms="5167" started-at="2022-03-20T04:04:38 EDT" finished-at="2022-03-20T04:04:43 EDT">
+        <test-method status="PASS" signature="register()[pri:0, instance:practice.DemoSite_Register@462d5aee]" name="register" duration-ms="3233" started-at="2022-03-22T01:30:19 EDT" finished-at="2022-03-22T01:30:23 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test001 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:practice.OpenGoogle@462d5aee]" name="tearDown" is-config="true" duration-ms="184" started-at="2022-03-20T04:04:43 EDT" finished-at="2022-03-20T04:04:43 EDT">
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:practice.DemoSite_Register@462d5aee]" name="tearDown" is-config="true" duration-ms="90" started-at="2022-03-22T01:30:23 EDT" finished-at="2022-03-22T01:30:23 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- practice.OpenGoogle -->
+      </class> <!-- practice.DemoSite_Register -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

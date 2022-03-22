@@ -1,12 +1,12 @@
 package driver;
 
-import pages.OpenGooglePractice;
+import pages.RegisterPage;
 
 public class PageInitializer extends BaseClass {
 
-	public static OpenGooglePractice oGP;
+	public static RegisterPage rP;
 
 	public static void initialize() {
-		oGP = new OpenGooglePractice();
+		rP = new RegisterPage();
 	}
 }
