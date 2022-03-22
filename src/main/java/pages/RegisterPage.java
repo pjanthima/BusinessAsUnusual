@@ -13,6 +13,22 @@ public class RegisterPage {
 	}
 
 //Please sort your webElement ascending order Thank You!!
+
+	@FindBy(id = "msdd")
+	private WebElement selectLanguage;// Keaw8
+
+	@FindBy(xpath = "//a[contains(text(),'English')]")
+	private WebElement english;// Keaw8
+
+	@FindBy(xpath = "//a[contains(text(),'French')]")
+	private WebElement french;// Keaw8
+
+	public void selectLanguage_Keaw8() {// Keaw8
+		selectLanguage.click();
+		english.click();
+		french.click();
+	}
+
 	@FindBy(id = "country")
 	private WebElement selectCountry;// Tom10
 
@@ -20,12 +36,12 @@ public class RegisterPage {
 	private WebElement submitButton;// Tom13
 
 	// This is just for practice
-	public void selectCountry_Tom10() {//Tom
+	public void selectCountry_Tom10() {// Tom
 		Select select = new Select(selectCountry);
 		select.selectByValue(BaseClass.getProperty("country"));
 	}
 
-	public void clickSubmitButton13() {//Tom
+	public void clickSubmitButton13() {// Tom
 		submitButton.click();
 	}
 }
