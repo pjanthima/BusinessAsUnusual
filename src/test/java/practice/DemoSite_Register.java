@@ -2,6 +2,7 @@ package practice;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -32,6 +33,7 @@ public class DemoSite_Register extends CommonMethods {
 		// (Jenny)5 - fill up phone number : "9198805671"
 
 		// (Danny)6 - select gender : male
+		driver.BaseClass.getDriver().findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[1]/input")).click();
 
 		// (Karaket)7 - select hobbies : movie
 
