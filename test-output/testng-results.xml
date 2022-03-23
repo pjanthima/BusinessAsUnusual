@@ -3,7 +3,26 @@
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
+  <suite started-at="2022-03-22T18:40:59 EDT" name="Default suite" finished-at="2022-03-22T18:41:06 EDT" duration-ms="7007">
+    <groups>
+    </groups>
+    <test started-at="2022-03-22T18:40:59 EDT" name="Default test" finished-at="2022-03-22T18:41:06 EDT" duration-ms="7007">
+      <class name="practice.DemoSite_Register">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:practice.DemoSite_Register@78123e82]" started-at="2022-03-22T18:40:59 EDT" name="setUp" finished-at="2022-03-22T18:41:04 EDT" duration-ms="5587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="register()[pri:0, instance:practice.DemoSite_Register@78123e82]" started-at="2022-03-22T18:41:04 EDT" name="register" finished-at="2022-03-22T18:41:05 EDT" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:practice.DemoSite_Register@78123e82]" started-at="2022-03-22T18:41:05 EDT" name="tearDown" finished-at="2022-03-22T18:41:06 EDT" duration-ms="756" status="PASS">
+=======
+  <suite started-at="2022-03-22T13:18:24 EDT" name="Default suite" finished-at="2022-03-22T13:18:32 EDT" duration-ms="8526">
+=======
   <suite name="Default suite" duration-ms="34974" started-at="2022-03-22T21:18:26 EDT" finished-at="2022-03-22T21:19:01 EDT">
+>>>>>>> main
     <groups>
     </groups>
     <test name="Default test" duration-ms="34974" started-at="2022-03-22T21:18:26 EDT" finished-at="2022-03-22T21:19:01 EDT">
@@ -16,7 +35,12 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
+<<<<<<< HEAD
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:practice.DemoSite_Register@4d5b6aac]" started-at="2022-03-22T13:18:32 EDT" name="tearDown" finished-at="2022-03-22T13:18:32 EDT" duration-ms="96" status="PASS">
+>>>>>>> main
+=======
         <test-method status="PASS" signature="tearDown()[pri:0, instance:practice.DemoSite_Register@462d5aee]" name="tearDown" is-config="true" duration-ms="103" started-at="2022-03-22T21:19:01 EDT" finished-at="2022-03-22T21:19:01 EDT">
+>>>>>>> main
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

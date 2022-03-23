@@ -34,6 +34,18 @@ public class RegisterPage {
 
 	@FindBy(id = "submitbtn")
 	private WebElement submitButton;// Tom13
+	
+	//Select Year 1968
+    @FindBy(id="yearbox")
+    private WebElement selectYearOfBirthElement;  //Puthea 11
+    
+  //Select Month April
+    @FindBy(xpath = "//option[@value='April']")
+    private WebElement selectMonthOfBirth; //Puthea 11
+    
+    //Select Month April
+    @FindBy(xpath = "//option[@value='13']")
+    private WebElement selectDateOfBirth; //Puthea 11
 
 	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[4]/div/input")
 	private WebElement PhoneNumber;
@@ -48,7 +60,26 @@ public class RegisterPage {
 		submitButton.click();
 	}
 	
+<<<<<<< HEAD
+	
+	
+	public void selectYearOfBirth() {
+	    selectYearOfBirthElement.click();
+	}
+	
+	
+	
+	public void selectMonthOfBirth() {
+	    selectMonthOfBirth.click();
+    }
+	
+	public void selectDateOfBirth() {
+	    selectDateOfBirth.click();
+	}
+	
+=======
 	public void inputPhoneNumber() {
 		PhoneNumber.sendKeys(BaseClass.getProperty("phoneNumber"));
 	}
+>>>>>>> main
 }
