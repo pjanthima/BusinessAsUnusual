@@ -33,6 +33,8 @@ public class DemoSite_Register extends CommonMethods {
 		rP.inputPhoneNumber();
 
 		// (Danny)6 - select gender : male
+		rP.selectGender();
+		Thread.sleep(3000);
 
 		// (Karaket)7 - select hobbies : movie
 
