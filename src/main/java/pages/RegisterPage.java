@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -34,5 +35,9 @@ public class RegisterPage {
 	
 	public void inputPhoneNumber() {
 		PhoneNumber.sendKeys(BaseClass.getProperty("phoneNumber"));
+	}
+	
+	public void selectGender() {
+		driver.BaseClass.getDriver().findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[2]/input"));
 	}
 }
