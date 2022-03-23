@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2022-03-22T17:17:06 EDT" name="Default suite" finished-at="2022-03-22T17:17:11 EDT" duration-ms="5804">
+  <suite name="Default suite" duration-ms="13236" started-at="2022-03-23T02:17:05 EDT" finished-at="2022-03-23T02:17:18 EDT">
     <groups>
     </groups>
-    <test started-at="2022-03-22T17:17:06 EDT" name="Default test" finished-at="2022-03-22T17:17:11 EDT" duration-ms="5804">
+    <test name="Default test" duration-ms="13236" started-at="2022-03-23T02:17:05 EDT" finished-at="2022-03-23T02:17:18 EDT">
       <class name="practice.DemoSite_Register">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:practice.DemoSite_Register@611889f4]" started-at="2022-03-22T17:17:06 EDT" name="setUp" finished-at="2022-03-22T17:17:11 EDT" duration-ms="5583" status="PASS">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:practice.DemoSite_Register@6a1aab78]" name="setUp" is-config="true" duration-ms="12025" started-at="2022-03-23T02:17:05 EDT" finished-at="2022-03-23T02:17:17 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="register()[pri:0, instance:practice.DemoSite_Register@611889f4]" started-at="2022-03-22T17:17:11 EDT" name="register" finished-at="2022-03-22T17:17:11 EDT" duration-ms="190" status="PASS">
-=======
-  <suite name="Default suite" duration-ms="12145" started-at="2022-03-23T02:04:09 EDT" finished-at="2022-03-23T02:04:21 EDT">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="12145" started-at="2022-03-23T02:04:09 EDT" finished-at="2022-03-23T02:04:21 EDT">
-      <class name="practice.DemoSite_Register">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:practice.DemoSite_Register@6a1aab78]" name="setUp" is-config="true" duration-ms="11342" started-at="2022-03-23T02:04:09 EDT" finished-at="2022-03-23T02:04:21 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="register()[pri:0, instance:practice.DemoSite_Register@6a1aab78]" name="register" duration-ms="748" started-at="2022-03-23T02:04:21 EDT" finished-at="2022-03-23T02:04:21 EDT">
->>>>>>> main
+        <test-method status="PASS" signature="register()[pri:0, instance:practice.DemoSite_Register@6a1aab78]" name="register" duration-ms="1157" started-at="2022-03-23T02:17:17 EDT" finished-at="2022-03-23T02:17:18 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
