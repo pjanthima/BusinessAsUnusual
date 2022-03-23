@@ -2,23 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-22T13:18:24 EDT" name="Default suite" finished-at="2022-03-22T13:18:32 EDT" duration-ms="8526">
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="34974" started-at="2022-03-22T21:18:26 EDT" finished-at="2022-03-22T21:19:01 EDT">
     <groups>
     </groups>
-    <test started-at="2022-03-22T13:18:24 EDT" name="Default test" finished-at="2022-03-22T13:18:32 EDT" duration-ms="8526">
+    <test name="Default test" duration-ms="34974" started-at="2022-03-22T21:18:26 EDT" finished-at="2022-03-22T21:19:01 EDT">
       <class name="practice.DemoSite_Register">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:practice.DemoSite_Register@4d5b6aac]" started-at="2022-03-22T13:18:24 EDT" name="setUp" finished-at="2022-03-22T13:18:32 EDT" duration-ms="7893" status="PASS">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:practice.DemoSite_Register@462d5aee]" name="setUp" is-config="true" duration-ms="31066" started-at="2022-03-22T21:18:26 EDT" finished-at="2022-03-22T21:18:57 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="register()[pri:0, instance:practice.DemoSite_Register@4d5b6aac]" started-at="2022-03-22T13:18:32 EDT" name="register" finished-at="2022-03-22T13:18:32 EDT" duration-ms="486" status="PASS">
+        <test-method status="PASS" signature="register()[pri:0, instance:practice.DemoSite_Register@462d5aee]" name="register" duration-ms="3735" started-at="2022-03-22T21:18:57 EDT" finished-at="2022-03-22T21:19:01 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:practice.DemoSite_Register@4d5b6aac]" started-at="2022-03-22T13:18:32 EDT" name="tearDown" finished-at="2022-03-22T13:18:32 EDT" duration-ms="96" status="PASS">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:practice.DemoSite_Register@462d5aee]" name="tearDown" is-config="true" duration-ms="103" started-at="2022-03-22T21:19:01 EDT" finished-at="2022-03-22T21:19:01 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+=======
+  <suite started-at="2022-03-22T17:10:56 EDT" name="Default suite" finished-at="2022-03-22T17:11:01 EDT" duration-ms="4659">
+    <groups>
+    </groups>
+    <test started-at="2022-03-22T17:10:56 EDT" name="Default test" finished-at="2022-03-22T17:11:01 EDT" duration-ms="4659">
+      <class name="practice.DemoSite_Register">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:practice.DemoSite_Register@12e61fe6]" started-at="2022-03-22T17:10:56 EDT" name="setUp" finished-at="2022-03-22T17:11:00 EDT" duration-ms="4390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="register()[pri:0, instance:practice.DemoSite_Register@12e61fe6]" started-at="2022-03-22T17:11:00 EDT" name="register" finished-at="2022-03-22T17:11:01 EDT" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+>>>>>>> 68e44651c3fd6a86e7a5e292881a925b27a07215
       </class> <!-- practice.DemoSite_Register -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
