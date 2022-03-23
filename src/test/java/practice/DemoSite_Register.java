@@ -18,36 +18,31 @@ public class DemoSite_Register extends CommonMethods {
 	}
 
 	@Test
-	public void register() throws InterruptedException {
+	public void register() {
 //          >>>>>>>>>>>>>>>>No hard code Here<<<<<<<<<<<<<
 
 		// (Jandery)1 - fill up first name : "James"
 
 		// (Sarah)2 - fill up last name : "Bond"
-
+		
 		// (hilale)3 - fill up address : "007 Casino Royal ST, Las Vegas, NV, 89109"
 
 		// (Brekhna)4 - fill up email address : "james_bond007@gmail.com"
 
 		// (Jenny)5 - fill up phone number : "9198805671"
          rP.inputPhoneNumber();
-         Thread.sleep(3000);
 		// (Danny)6 - select gender : male
-
+         rP.selectGender();
 		// (Karaket)7 - select hobbies : movie
 
 		// (Keaw)8 - select language : English and French
-		rP.selectLanguage_Keaw8();
-		
+
 		// (Kalthera)9 - select skills : Javascript
 
 		// (Tom)10 - select country : Hong Kong
 		rP.selectCountry_Tom10();
 
 		// (Puthea)11 - select birhtday : 1968 April 13
-		rP.selectYearOfBirth();
-		rP.selectMonthOfBirth();
-		rP.selectDateOfBirth();
 
 		// (Vgomez)12 - enter password and confirm password
 
