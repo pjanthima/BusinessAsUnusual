@@ -18,7 +18,7 @@ public class DemoSite_Register extends CommonMethods {
 	}
 
 	@Test
-	public void register() {
+	public void register() throws InterruptedException {
 //          >>>>>>>>>>>>>>>>No hard code Here<<<<<<<<<<<<<
 
 		// (Jandery)1 - fill up first name : "James"
@@ -31,12 +31,14 @@ public class DemoSite_Register extends CommonMethods {
 
 		// (Jenny)5 - fill up phone number : "9198805671"
          rP.inputPhoneNumber();
+         Thread.sleep(3000);
 		// (Danny)6 - select gender : male
 
 		// (Karaket)7 - select hobbies : movie
 
 		// (Keaw)8 - select language : English and French
-
+		rP.selectLanguage_Keaw8();
+		
 		// (Kalthera)9 - select skills : Javascript
 
 		// (Tom)10 - select country : Hong Kong

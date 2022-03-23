@@ -5,7 +5,6 @@
     <classes>
       <class name="practice.DemoSite_Register">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="register"/>
         </methods>
