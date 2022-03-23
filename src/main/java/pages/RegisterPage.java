@@ -75,5 +75,4 @@ public class RegisterPage {
 	public void inputPhoneNumber() {
 		PhoneNumber.sendKeys(BaseClass.getProperty("phoneNumber"));
 	}
-
 }
