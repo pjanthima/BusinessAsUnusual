@@ -40,7 +40,7 @@ public class DemoSite_Register extends CommonMethods {
 		rP.selectLanguage_Keaw8();
 
 		// (Kalthera)9 - select skills : Javascript
-
+        rP.selectSkills_Kalthera9();
 		// (Tom)10 - select country : Hong Kong
 		rP.selectCountry_Tom10();
 

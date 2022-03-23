@@ -13,6 +13,12 @@ public class RegisterPage {
 	}
 
 //Please sort your webElement ascending order Thank You!!
+<<<<<<< HEAD
+	
+	@FindBy(id = "Skills")
+	private WebElement selectSkills;//Kalthera9
+	
+=======
 
 	@FindBy(id = "msdd")
 	private WebElement selectLanguage;// Keaw8
@@ -29,6 +35,7 @@ public class RegisterPage {
 		french.click();
 	}
 
+>>>>>>> main
 	@FindBy(id = "country")
 	private WebElement selectCountry;// Tom10
 
@@ -51,7 +58,17 @@ public class RegisterPage {
 	private WebElement PhoneNumber;
 
 	// This is just for practice
+<<<<<<< HEAD
+	public void selectSkills_Kalthera9() {
+		
+		Select s = new Select(selectSkills);
+		s.selectByValue(BaseClass.getProperty("skills"));
+	}
+	
+	public void selectCountry_Tom10() {//Tom
+=======
 	public void selectCountry_Tom10() {// Tom
+>>>>>>> main
 		Select select = new Select(selectCountry);
 		select.selectByValue(BaseClass.getProperty("country"));
 	}
