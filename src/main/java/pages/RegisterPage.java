@@ -31,6 +31,9 @@ public class RegisterPage {
     @FindBy(xpath = "//option[@value='13']")
     private WebElement selectDateOfBirth; //Puthea 11
 
+	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[4]/div/input")
+	private WebElement PhoneNumber;
+	
 	// This is just for practice
 	public void selectCountry_Tom10() {//Tom
 		Select select = new Select(selectCountry);
@@ -41,6 +44,7 @@ public class RegisterPage {
 		submitButton.click();
 	}
 	
+<<<<<<< HEAD
 	
 	
 	public void selectYearOfBirth() {
@@ -57,4 +61,9 @@ public class RegisterPage {
 	    selectDateOfBirth.click();
 	}
 	
+=======
+	public void inputPhoneNumber() {
+		PhoneNumber.sendKeys(BaseClass.getProperty("phoneNumber"));
+	}
+>>>>>>> main
 }
