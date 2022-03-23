@@ -26,7 +26,7 @@ public class RegisterPage {
 	public void selectLanguage_Keaw8() {// Keaw8
 		selectLanguage.click();
 		english.click();
-		french.click();
+		//french.click();
 	}
 
 	@FindBy(id = "country")
