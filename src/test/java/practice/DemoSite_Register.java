@@ -37,7 +37,8 @@ public class DemoSite_Register extends CommonMethods {
 		// (Karaket)7 - select hobbies : movie
 
 		// (Keaw)8 - select language : English and French
-
+		rP.selectLanguage_Keaw8();
+		
 		// (Kalthera)9 - select skills : Javascript
 
 		// (Tom)10 - select country : Hong Kong
