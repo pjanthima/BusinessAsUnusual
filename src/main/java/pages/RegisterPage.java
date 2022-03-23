@@ -26,7 +26,7 @@ public class RegisterPage {
 	public void selectLanguage_Keaw8() {// Keaw8
 		selectLanguage.click();
 		english.click();
-		french.click();
+		//french.click();
 	}
 
 	@FindBy(id = "country")
@@ -34,22 +34,22 @@ public class RegisterPage {
 
 	@FindBy(id = "submitbtn")
 	private WebElement submitButton;// Tom13
-	
-	//Select Year 1968
-    @FindBy(id="yearbox")
-    private WebElement selectYearOfBirthElement;  //Puthea 11
-    
-  //Select Month April
-    @FindBy(xpath = "//option[@value='April']")
-    private WebElement selectMonthOfBirth; //Puthea 11
-    
-    //Select Month April
-    @FindBy(xpath = "//option[@value='13']")
-    private WebElement selectDateOfBirth; //Puthea 11
+
+	// Select Year 1968
+	@FindBy(id = "yearbox")
+	private WebElement selectYearOfBirthElement; // Puthea 11
+
+	// Select Month April
+	@FindBy(xpath = "//option[@value='April']")
+	private WebElement selectMonthOfBirth; // Puthea 11
+
+	// Select Month April
+	@FindBy(xpath = "//option[@value='13']")
+	private WebElement selectDateOfBirth; // Puthea 11
 
 	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[4]/div/input")
 	private WebElement PhoneNumber;
-	
+
 	// This is just for practice
 	public void selectCountry_Tom10() {// Tom
 		Select select = new Select(selectCountry);
@@ -59,27 +59,21 @@ public class RegisterPage {
 	public void clickSubmitButton13() {// Tom
 		submitButton.click();
 	}
-	
-<<<<<<< HEAD
-	
-	
+
 	public void selectYearOfBirth() {
-	    selectYearOfBirthElement.click();
+		selectYearOfBirthElement.click();
 	}
-	
-	
-	
+
 	public void selectMonthOfBirth() {
-	    selectMonthOfBirth.click();
-    }
-	
-	public void selectDateOfBirth() {
-	    selectDateOfBirth.click();
+		selectMonthOfBirth.click();
 	}
-	
-=======
+
+	public void selectDateOfBirth() {
+		selectDateOfBirth.click();
+	}
+
 	public void inputPhoneNumber() {
 		PhoneNumber.sendKeys(BaseClass.getProperty("phoneNumber"));
 	}
->>>>>>> main
+
 }

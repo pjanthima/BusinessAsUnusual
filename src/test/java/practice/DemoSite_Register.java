@@ -30,14 +30,14 @@ public class DemoSite_Register extends CommonMethods {
 		// (Brekhna)4 - fill up email address : "james_bond007@gmail.com"
 
 		// (Jenny)5 - fill up phone number : "9198805671"
-         rP.inputPhoneNumber();
-         Thread.sleep(3000);
+		rP.inputPhoneNumber();
+
 		// (Danny)6 - select gender : male
 
 		// (Karaket)7 - select hobbies : movie
 
 		// (Keaw)8 - select language : English and French
-		rP.selectLanguage_Keaw8();
+		//rP.selectLanguage_Keaw8();
 		
 		// (Kalthera)9 - select skills : Javascript
 
@@ -48,7 +48,7 @@ public class DemoSite_Register extends CommonMethods {
 		rP.selectYearOfBirth();
 		rP.selectMonthOfBirth();
 		rP.selectDateOfBirth();
-
+		Thread.sleep(3000);
 		// (Vgomez)12 - enter password and confirm password
 
 		// (Tom)13 - click submit
