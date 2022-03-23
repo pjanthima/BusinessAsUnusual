@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2022-03-22T17:17:06 EDT" name="Default suite" finished-at="2022-03-22T17:17:11 EDT" duration-ms="5804">
+    <groups>
+    </groups>
+    <test started-at="2022-03-22T17:17:06 EDT" name="Default test" finished-at="2022-03-22T17:17:11 EDT" duration-ms="5804">
+      <class name="practice.DemoSite_Register">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:practice.DemoSite_Register@611889f4]" started-at="2022-03-22T17:17:06 EDT" name="setUp" finished-at="2022-03-22T17:17:11 EDT" duration-ms="5583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="register()[pri:0, instance:practice.DemoSite_Register@611889f4]" started-at="2022-03-22T17:17:11 EDT" name="register" finished-at="2022-03-22T17:17:11 EDT" duration-ms="190" status="PASS">
+=======
   <suite name="Default suite" duration-ms="12145" started-at="2022-03-23T02:04:09 EDT" finished-at="2022-03-23T02:04:21 EDT">
     <groups>
     </groups>
@@ -12,6 +24,7 @@
           </reporter-output>
         </test-method> <!-- setUp -->
         <test-method status="PASS" signature="register()[pri:0, instance:practice.DemoSite_Register@6a1aab78]" name="register" duration-ms="748" started-at="2022-03-23T02:04:21 EDT" finished-at="2022-03-23T02:04:21 EDT">
+>>>>>>> main
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->

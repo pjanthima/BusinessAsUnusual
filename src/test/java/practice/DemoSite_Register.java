@@ -36,7 +36,7 @@ public class DemoSite_Register extends CommonMethods {
 		// (Danny)6 - select gender : male
 
 		// (Karaket)7 - select hobbies : movie
-
+		rP.selectHobbies7();
 		// (Keaw)8 - select language : English and French
 		// rP.selectLanguage_Keaw8();
 
