@@ -22,6 +22,20 @@ public class RegisterPage {
 	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[4]/div/input")
 	private WebElement PhoneNumber;
 	
+	
+	//input[@placeholder='First Name']
+	
+	// (Jandery)1 - fill up first name : "James"
+	
+	@FindBy(xpath= "//input[@placeholder='First Name']")
+	private WebElement firstname;
+	
+	public void FirstName_Jan(){ 
+		firstname.sendKeys(BaseClass.getProperty("firstname"));
+		
+	}
+
+	
 	// This is just for practice
 	public void selectCountry_Tom10() {//Tom
 		Select select = new Select(selectCountry);
