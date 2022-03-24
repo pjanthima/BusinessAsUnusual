@@ -2,6 +2,7 @@ package practice;
 
 import java.util.concurrent.TimeUnit;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -35,8 +36,8 @@ public class DemoSite_Register extends CommonMethods {
 		rP.inputPhoneNumber();
 
 		// (Danny)6 - select gender : male
-		rP.selectGender();
-
+		rP.clickGenderMale();
+		Assert.assertTrue(rP.selectGender.isSelected());
 		// (Karaket)7 - select hobbies : movie
 		rP.selectHobbies7();
 		// (Keaw)8 - select language : English and French
@@ -51,7 +52,6 @@ public class DemoSite_Register extends CommonMethods {
 		rP.selectYearOfBirth();
 		rP.selectMonthOfBirth();
 		rP.selectDateOfBirth();
-
 
 		// (Vgomez)12 - enter password and confirm password
 

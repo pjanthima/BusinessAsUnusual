@@ -54,7 +54,7 @@ public class RegisterPage {
 	private WebElement PhoneNumber;
 	
 	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[1]/input")
-	private WebElement selectGender;
+	public WebElement selectGender;
 
 	// This is just for practice
 
@@ -107,7 +107,7 @@ public class RegisterPage {
 		PhoneNumber.sendKeys(BaseClass.getProperty("phoneNumber"));
 	}
 	
-	public void selectGender() {
+	public void clickGenderMale() {
 		selectGender.click();
 	}
 }
