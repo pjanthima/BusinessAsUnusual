@@ -49,9 +49,8 @@ public class DemoSite_Register extends CommonMethods {
 		rP.selectCountry_Tom10();
 
 		// (Puthea)11 - select birhtday : 1968 April 13
-		rP.selectYearOfBirth();
-		rP.selectMonthOfBirth();
 		rP.selectDateOfBirth();
+	
 
 		// (Vgomez)12 - enter password and confirm password
 
