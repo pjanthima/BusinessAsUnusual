@@ -35,6 +35,7 @@ public class DemoSite_Register extends CommonMethods {
 		rP.inputPhoneNumber();
 
 		// (Danny)6 - select gender : male
+		rP.selectGender();
 
 		// (Karaket)7 - select hobbies : movie
 		rP.selectHobbies7();
