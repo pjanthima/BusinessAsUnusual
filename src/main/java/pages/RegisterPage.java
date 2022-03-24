@@ -32,13 +32,6 @@ public class RegisterPage {
 	@FindBy(xpath = "//a[contains(text(),'French')]")
 	private WebElement french;// Keaw8
 
-	public void selectLanguage_Keaw8() {// Keaw8
-		selectLanguage.click();
-		english.click();
-		french.click();
-	}
-
-
 	@FindBy(id = "country")
 	private WebElement selectCountry;// Tom10
 
@@ -62,34 +55,34 @@ public class RegisterPage {
 
 	// This is just for practice
 
-
 	public void fullName() {
 		firstName.sendKeys(BaseClass.getProperty("firstName"));
 		lastName.sendKeys(BaseClass.getProperty("lastName"));
 	}
 
-	public void selectCountry_Tom10() {// Tom
-    
 	public void selectSkills_Kalthera9() {
-
 		Select s = new Select(selectSkills);
 		s.selectByValue(BaseClass.getProperty("skills"));
 	}
+	
+	public void selectLanguage_Keaw8() {// Keaw8
+		selectLanguage.click();
+		english.click();
+		french.click();
+	}
 
 	public void selectCountry_Tom10() {// Tom
-
-
 		Select select = new Select(selectCountry);
 		select.selectByValue(BaseClass.getProperty("country"));
-	
+
 	}
-	
-	@FindBy(id = "checkbox2")//karaket
+
+	@FindBy(id = "checkbox2") // karaket
 	private WebElement selectHobbies;
-	
-	public void selectHobbies7(){
+
+	public void selectHobbies7() {
 		selectHobbies.click();
-}
+	}
 
 	public void clickSubmitButton13() {// Tom
 		submitButton.click();
