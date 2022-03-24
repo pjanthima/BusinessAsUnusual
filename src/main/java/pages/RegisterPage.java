@@ -13,6 +13,13 @@ public class RegisterPage {
 	}
 
 //Please sort your webElement ascending order Thank You!!
+
+	@FindBy(xpath = "//input[@placeholder='First Name']")
+	private WebElement firstName;// Tom1
+
+	@FindBy(xpath = "//input[@placeholder='Last Name']")
+	private WebElement lastName;// Tom2
+
 	@FindBy(id = "country")
 	private WebElement selectCountry;// Tom10
 
@@ -20,12 +27,18 @@ public class RegisterPage {
 	private WebElement submitButton;// Tom13
 
 	// This is just for practice
-	public void selectCountry_Tom10() {//Tom
+
+	public void fullName() {
+		firstName.sendKeys(BaseClass.getProperty("firstName"));
+		lastName.sendKeys(BaseClass.getProperty("lastName"));
+	}
+
+	public void selectCountry_Tom10() {// Tom
 		Select select = new Select(selectCountry);
 		select.selectByValue(BaseClass.getProperty("country"));
 	}
 
-	public void clickSubmitButton13() {//Tom
+	public void clickSubmitButton13() {// Tom
 		submitButton.click();
 	}
 }
