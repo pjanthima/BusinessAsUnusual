@@ -25,6 +25,7 @@ public class DemoSite_Register extends CommonMethods {
 		// (Jandery)1 - fill up first name : "James"
 
 		// (Sarah)2 - fill up last name : "Bond"
+		rP.fullName();
 
 		// (hilale)3 - fill up address : "007 Casino Royal ST, Las Vegas, NV, 89109"
 
