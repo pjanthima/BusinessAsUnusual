@@ -1,11 +1,13 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import driver.BaseClass;
+import io.github.bonigarcia.wdm.webdriver.WebDriverBrowser;
 
 public class RegisterPage {
 	public RegisterPage() {
@@ -52,6 +54,9 @@ public class RegisterPage {
 
 	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[4]/div/input")
 	private WebElement PhoneNumber;
+	
+	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[1]/input")
+	private WebElement selectGender;
 
 	// This is just for practice
 
@@ -102,5 +107,9 @@ public class RegisterPage {
 
 	public void inputPhoneNumber() {
 		PhoneNumber.sendKeys(BaseClass.getProperty("phoneNumber"));
+	}
+	
+	public void selectGender() { //Danny
+		selectGender.click();
 	}
 }
