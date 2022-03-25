@@ -14,11 +14,11 @@ public class RegisterPage {
 
 //Please sort your webElement ascending order Thank You!!
 
-//	@FindBy(xpath = "//input[@placeholder='First Name']")
-//	private WebElement firstName;// Tom1
-//
-//	@FindBy(xpath = "//input[@placeholder='Last Name']")
-//	private WebElement lastName;// Tom2
+	@FindBy(xpath = "//input[@placeholder='First Name']")
+	private WebElement firstName;// Jan
+
+	@FindBy(xpath = "//input[@placeholder='Last Name']")
+	private WebElement lastName;// Tom2
 
 	@FindBy(id = "Skills")
 	private WebElement selectSkills;// Kalthera9
@@ -57,13 +57,6 @@ public class RegisterPage {
 	
 	// (Jandery)1 - fill up first name : "James"
 	
-	@FindBy(xpath= "//input[@placeholder='First Name']")
-	private WebElement firstname;
-	
-	public void FirstName_Jan(){ 
-		firstname.sendKeys(BaseClass.getProperty("firstname"));
-		
-	}
 
 	// This is just for practice
 	public void selectCountry_Tom10() {//Tom
@@ -75,10 +68,10 @@ public class RegisterPage {
 
 	// This is just for practice
 
-//	public void fullName() {// Tom
-//		firstName.sendKeys(BaseClass.getProperty("firstName"));
-//		lastName.sendKeys(BaseClass.getProperty("lastName"));
-//	}
+	public void fullName_Jan() {// Jan
+		firstName.sendKeys(BaseClass.getProperty("firstName"));
+		lastName.sendKeys(BaseClass.getProperty("lastName"));
+	}
 
 	public void selectSkills_Kalthera9() {
 		Select s = new Select(selectSkills);

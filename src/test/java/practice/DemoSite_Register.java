@@ -22,13 +22,10 @@ public class DemoSite_Register extends CommonMethods {
 	@Test
 	public void register() throws InterruptedException {
 //          >>>>>>>>>>>>>>>>No hard code Here<<<<<<<<<<<<<
-		// rP.fullName(); Tom test
 
 		// (Jandery)1 - fill up first name : "James"
-		
-		rP.FirstName_Jan();
-
 		// (Sarah)2 - fill up last name : "Bond"
+		rP.fullName_Jan(); // Jan
 
 		// (hilale)3 - fill up address : "007 Casino Royal ST, Las Vegas, NV, 89109"
 
@@ -52,7 +49,6 @@ public class DemoSite_Register extends CommonMethods {
 
 		// (Puthea)11 - select birhtday : 1968 April 13
 		rP.selectDateOfBirth();
-	
 
 		// (Vgomez)12 - enter password and confirm password
 
