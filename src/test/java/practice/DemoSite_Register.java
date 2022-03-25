@@ -25,6 +25,8 @@ public class DemoSite_Register extends CommonMethods {
 		// rP.fullName(); Tom test
 
 		// (Jandery)1 - fill up first name : "James"
+		
+		rP.FirstName_Jan();
 
 		// (Sarah)2 - fill up last name : "Bond"
 
