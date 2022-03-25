@@ -28,4 +28,8 @@ public class RegisterPage {
 	public void clickSubmitButton13() {//Tom
 		submitButton.click();
 	}
+	 
+	@FindBy(xpath = "//*[@id=\"eid\"]/input")
+	private WebElement enterEmail;
+	
 }
