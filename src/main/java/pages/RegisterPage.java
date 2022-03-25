@@ -53,8 +53,6 @@ public class RegisterPage {
 	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[4]/div/input")
 	private WebElement PhoneNumber;
 	
-
-	
 	//input[@placeholder='First Name']
 	
 	// (Jandery)1 - fill up first name : "James"
@@ -67,7 +65,6 @@ public class RegisterPage {
 		
 	}
 
-	
 	// This is just for practice
 	public void selectCountry_Tom10() {//Tom
 		Select select = new Select(selectCountry);
@@ -106,6 +103,10 @@ public class RegisterPage {
 		submitButton.click();
 	}
 
+	 
+	@FindBy(xpath = "//*[@id=\"eid\"]/input")
+	private WebElement enterEmail;
+
 	public void selectDateOfBirth() {
 		Select yearSelect = new Select(yearElement);
 		yearSelect.selectByValue(BaseClass.getProperty("yearOfBirth"));
@@ -116,8 +117,6 @@ public class RegisterPage {
         Select dateSelect = new Select(dateElement);
        dateSelect.selectByValue(BaseClass.getProperty("selectDoB"));
 	}
-
-	
 
 	public void inputPhoneNumber() {
 		PhoneNumber.sendKeys(BaseClass.getProperty("phoneNumber"));
