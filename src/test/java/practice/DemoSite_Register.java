@@ -53,6 +53,8 @@ public class DemoSite_Register extends CommonMethods {
 		// (Vgomez)12 - enter password and confirm password
 
 		// (Tom)13 - click submit
+		
+		//DanDan practice
 
 	}
 
