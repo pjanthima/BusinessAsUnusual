@@ -54,7 +54,7 @@ public class DemoSite_Register extends CommonMethods {
 
 		// (Tom)13 - click submit
 		
-		//DanDan practice
+		//Hello World
 
 	}
 
