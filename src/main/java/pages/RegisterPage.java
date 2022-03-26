@@ -14,6 +14,9 @@ public class RegisterPage {
 
 //Please sort your webElement ascending order Thank You!!
 
+	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[2]/div/textarea")
+	private WebElement Address;
+	
 	@FindBy(xpath = "//input[@placeholder='First Name']")
 	private WebElement firstName;// Jan
 
@@ -118,4 +121,9 @@ public class RegisterPage {
 	public void clickGenderMale() {
 		selectGender.click();
 	}
+	
+	public void inputAddress() {
+		Address.sendKeys(BaseClass.getProperty("address"));
+	}
+	
 }

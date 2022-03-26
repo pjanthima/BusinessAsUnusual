@@ -28,7 +28,7 @@ public class DemoSite_Register extends CommonMethods {
 		rP.fullName_Jan(); // Jan
 
 		// (hilale)3 - fill up address : "007 Casino Royal ST, Las Vegas, NV, 89109"
-
+		rP.inputAddress();
 		// (Brekhna)4 - fill up email address : "james_bond007@gmail.com"
 
 		// (Jenny)5 - fill up phone number : "9198805671"
