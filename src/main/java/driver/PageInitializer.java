@@ -1,12 +1,12 @@
 package driver;
 
-import pages.RegisterPage;
+import pages.CommonPage;
 
 public class PageInitializer extends BaseClass {
 
-	public static RegisterPage rP;
+	public static CommonPage cP;
 
 	public static void initialize() {
-		rP = new RegisterPage();
+		cP = new CommonPage();
 	}
 }
