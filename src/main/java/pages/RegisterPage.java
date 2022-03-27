@@ -56,6 +56,9 @@ public class RegisterPage {
 	@FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[1]/input")
 	public WebElement selectGender;
 
+	//Brekhna
+	@FindBy(xpath = "//*[@id=\"eid\"]/input") 
+	private WebElement email;
 	// This is just for practice
 
 //	public void fullName() {// Tom
@@ -110,5 +113,11 @@ public class RegisterPage {
 	
 	public void clickGenderMale() {
 		selectGender.click();
+		
 	}
+	   public void enterEmail_Brekhna() {
+		email.sendKeys(BaseClass.getProperty("AutomationTestingEmail"));
+	}
+	
+	
 }
