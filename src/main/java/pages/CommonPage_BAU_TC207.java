@@ -32,14 +32,27 @@ public class CommonPage_BAU_TC207 {
         @FindBy(xpath = "//*[@id='page']/section/section/div[2]/div[1]/ul/li[1]/div[1]/div/div[1]/h4/a")
         public WebElement bedBathTextElement;
         
-        public void verifyHomePage() {
-            String expectedTitle = BaseClass.getProperty("homePagetitle");
-            String actualTitle = BaseClass.getDriver().getTitle();
-            if(actualTitle.equalsIgnoreCase(expectedTitle))
-                System.out.println("Title Matched, You're on HomePage");
-            else
-                System.out.println("Title didn't match : "+actualTitle);
-        }
+        
+        @FindBy(xpath = "//*[@id='page']/section/section/div[2]/div[1]/div/h3")
+        public WebElement errorMessagElement;
+        
+        @FindBy(xpath = "//*[@id='page']/section/section/div[2]/div[1]/ul/li[1]/div[1]/div/div[1]/h4/a")
+        public WebElement adidasStorElement;
+        
+        @FindBy(xpath = "//*[@id='page']/section/div[2]/section[2]/div[3]/ul/li[1]/a")
+        public WebElement hotDealShopNoWebElement;
+        
+        @FindBy(xpath = "//input[@type='email']")
+        public WebElement hotDealEmailElement;
+        
+        @FindBy(xpath = "//*[@id='interstitial-form']/div[3]/div/button")
+        public WebElement iWantDealElement;
+       
+        
+        @FindBy(xpath = "//*[@id='interstitial-form']/div[3]/p[1]")
+        public WebElement verifyHotDealEmailElement;
+            
+   
         
         public void verifyStorePage() {  
             String allStroreTagString = allStoreText.getText();
@@ -58,11 +71,45 @@ public class CommonPage_BAU_TC207 {
         
         public void clickOnBedBath() {
             bedBathTextElement.click();
-            String bedBathText = bedBathDealInfoText.getText();
-            Assert.assertEquals(bedBathText, "Deals and Information");
-            System.out.println("Text : "+bedBathText);
+           // String bedBathText = bedBathDealInfoText.getText();
+//            Assert.assertEquals(bedBathText, "Deals and Information");
+//            System.out.println("Text : "+bedBathText);
+//            
+        }
+        
+        public void findAStoreErrorMsg() {
+            findStoreElement.sendKeys(BaseClass.getProperty("IncorrectSpelling"));
+            searcButtonElement.click();
+            String errorMessageText = errorMessagElement.getText();
+            Assert.assertEquals(errorMessageText, "We're sorry. No results were found.");
+            System.out.println("Succeful on Search for "+errorMessageText);
             
         }
+        
+        public void findAdidasStore() {
+            findStoreElement.sendKeys(BaseClass.getProperty("adidasStore"));
+            searcButtonElement.click();
+//            String adidas = adidasStorElement.getText();
+//            Assert.assertEquals(adidas, "Adidas");
+//            System.out.println("Succeful on Search for "+adidas);
+            
+        }
+        
+        public void clickOnAdidasStore() {
+            adidasStorElement.click();
+        }
+        
+        public void clickHotDealShopNow() {
+            hotDealShopNoWebElement.click();
+        }
+        
+        public void inputEmail() {
+            hotDealEmailElement.sendKeys(BaseClass.getProperty("hotDealEmail"));
+            iWantDealElement.click();
+        }
+       
+        
+        
         
         
         
