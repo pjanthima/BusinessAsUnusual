@@ -15,6 +15,8 @@ public class BAU_TC201 extends CommonMethods {
 		BaseClass.getDriver().get(BaseClass.getProperty("url1"));
 		BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
 		BaseClass.getDriver().manage().window().maximize();
+	
+	
 	}
 
 	@Test
