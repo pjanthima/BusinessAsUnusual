@@ -7,8 +7,6 @@ public class PageInitializer extends BaseClass {
 
 	public static CommonPage cP;
     public static CommonpageBAU_TC302 cPG;
-   
- //   public static ClosePopup_302 cPT;
 
 	public static void initialize() {
 		cP = new CommonPage();
