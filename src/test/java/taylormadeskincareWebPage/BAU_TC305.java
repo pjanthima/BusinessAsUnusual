@@ -165,7 +165,7 @@ public class BAU_TC305 extends CommonMethods {
 			String FacebookAccount=Cpb.AccountFacebook.getText();
 			Assert.assertEquals(BaseClass.getProperty("myAccount"),FacebookAccount);
 			System.out.println(FacebookAccount);
-			
+			System.out.println(FacebookAccount);
 			 
 		     
 			
