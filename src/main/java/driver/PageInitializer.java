@@ -6,6 +6,7 @@ import pages.ContactUsPage;
 import pages.CommonpageBAU_TC302;
 import pages.CommonPage_BAU_TC207;
 import pages.CommonPage_BAU_TC305;
+import pages.CommonPage_TC203;
 
 public class PageInitializer extends BaseClass {
 
@@ -20,6 +21,8 @@ public class PageInitializer extends BaseClass {
 	public static CommonPage_BAU_TC207 case1;
 
 	public static CommonPage_BAU_TC305 Cpb;
+	
+	public static CommonPage_TC203 cP203;
 
 	public static void initialize() {
 
@@ -34,6 +37,7 @@ public class PageInitializer extends BaseClass {
 		cPG = new CommonpageBAU_TC302();
 
 		Cpb = new CommonPage_BAU_TC305();
-
+		
+		cP203 = new CommonPage_TC203();
 	}
 }
