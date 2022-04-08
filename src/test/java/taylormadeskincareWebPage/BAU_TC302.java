@@ -1,17 +1,7 @@
 package taylormadeskincareWebPage;
 
-import java.util.List;
-
-
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 
 import org.testng.annotations.Test;
@@ -30,30 +20,27 @@ public class BAU_TC302 extends CommonMethods {
 		BaseClass.getDriver().manage().window().maximize();
 
 	}
-	
-	@Test(priority =1)
-	public void BAU_TC302_TestCase1()  {
-		//1.User go to URL 
-		//2.close  on shop tap
+
+	@Test(priority = 1)
+	public void BAU_TC302_TestCase1() {
+		// 1.User go to URL
+		// 2.close on shop tap
 		wait(2);
 		cPG.closingPopup.click();
-		
+
 		wait(5);
 		BroswerUtilities.hover(cPG.shop);
 //		cPG.shop.click();
-		
+
 //      3.Select shop and click Shop All.
 		wait(5);
 		BroswerUtilities.hover(cPG.shopAll);
 		cPG.shopAll.click();
-		
-
 
 //      4.First, click on a picture of the product.
 		BroswerUtilities.hover(cPG.product);
 		cPG.product.click();
 		wait(5);
-
 
 //      5.  Add to cart.  
 		BroswerUtilities.hover(cPG.addCart);
@@ -62,81 +49,77 @@ public class BAU_TC302 extends CommonMethods {
 
 	}
 
-	@Test(priority =2)
-	public void BAU_TC302_TestCase2()  {
+	@Test(priority = 2)
+	public void BAU_TC302_TestCase2() {
 
-		//1.User go to URL 
-		//2.close  on shop tap
+		// 1.User go to URL
+		// 2.close on shop tap
 		wait(2);
 		cPG.closingPopup.click();
-		
+
 		wait(5);
 		BroswerUtilities.hover(cPG.shop);
 //		cPG.shop.click();
-		
 
 //      3.Select shop and click Shop All.
 		wait(5);
 		BroswerUtilities.hover(cPG.shopAll);
 		cPG.shopAll.click();
-		
+
 //      4.First, click on a picture of the product.
 		wait(5);
 		BroswerUtilities.hover(cPG.product);
 		cPG.product.click();
-		
+
 //      5.Add to cart.
 		wait(5);
 		BroswerUtilities.hover(cPG.addCart);
 		cPG.addCart.click();
-		
+
 //     6.User click on shopping bag cart icon. 
 		wait(5);
-	 	BroswerUtilities.waitForVisibility(cPG.shoppingBag,15);
+		BroswerUtilities.waitForVisibility(cPG.shoppingBag, 15);
 		cPG.shoppingBag.click();
 	}
 
 	@Test
-	public void BAU_TC302_TestCase3()  {
+	public void BAU_TC302_TestCase3() {
 
-		//1.User go to URL 
-		//2.close  on shop tap
+		// 1.User go to URL
+		// 2.close on shop tap
 		wait(2);
 		cPG.closingPopup.click();
-		
+
 		wait(5);
 		BroswerUtilities.hover(cPG.shop);
 //		cPG.shop.click();
-	
 
 //      3.Select shop and click Shop All.
 		wait(5);
 		BroswerUtilities.hover(cPG.shopAll);
 		cPG.shopAll.click();
-		
+
 //      4.First, click on a picture of the product.
 		wait(5);
 		BroswerUtilities.hover(cPG.product);
 		cPG.product.click();
-		
+
 //      5.Add to cart.
 		wait(5);
 		BroswerUtilities.hover(cPG.addCart);
 		cPG.addCart.click();
-		
+
 //     6.User click on shopping bag cart icon. 
 		wait(5);
-	 	BroswerUtilities.waitForVisibility(cPG.shoppingBag,15);
+		BroswerUtilities.waitForVisibility(cPG.shoppingBag, 15);
 		cPG.shoppingBag.click();
-		
+
 //      7.click on delete button
-	    wait(5);
-	    BroswerUtilities.hover(cPG.deleteButton);
-	    cPG.deleteButton.click();
-	
+		wait(5);
+		BroswerUtilities.hover(cPG.deleteButton);
+		cPG.deleteButton.click();
 
 	}
-
 
 	@Test
 	public void BAU_TC302_TestCase4() {
@@ -144,48 +127,41 @@ public class BAU_TC302 extends CommonMethods {
 //      2.close  on shop tap
 		wait(2);
 		cPG.closingPopup.click();
-		
+
 		wait(5);
 		BroswerUtilities.hover(cPG.shop);
 //		cPG.shop.click();
-		
 
 //      3.Select shop and click Shop All.
 		wait(5);
 		BroswerUtilities.hover(cPG.shopAll);
 		cPG.shopAll.click();
-		
+
 //4.    First, click on a picture of the product.
 		wait(5);
 		BroswerUtilities.hover(cPG.product);
 		cPG.product.click();
-		
+
 //5.    Add to cart.
 		wait(5);
 		BroswerUtilities.hover(cPG.addCart);
 		cPG.addCart.click();
-		
+
 //6.    User click on shopping bag cart icon. 
 		wait(5);
-	 	BroswerUtilities.waitForVisibility(cPG.shoppingBag,15);
+		BroswerUtilities.waitForVisibility(cPG.shoppingBag, 15);
 		cPG.shoppingBag.click();
-		
 
-
-		
 //7.    click on delete button
-	    wait(5);
-	    BroswerUtilities.hover(cPG.deleteButton);
-	    cPG.deleteButton.click();
+		wait(5);
+		BroswerUtilities.hover(cPG.deleteButton);
+		cPG.deleteButton.click();
 
 //8.   click on update button
-	    wait(5);
-	    BroswerUtilities.hover(cPG.updatedButton);
-	    cPG.updatedButton.click();
-	    
-	    
-	}
+		wait(5);
+		BroswerUtilities.hover(cPG.updatedButton);
+		cPG.updatedButton.click();
 
 	}
 
-
+}
