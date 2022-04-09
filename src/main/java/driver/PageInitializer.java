@@ -1,6 +1,9 @@
 package driver;
 
+import org.openqa.selenium.interactions.Actions;
+
 import pages.CommonPage;
+import pages.CommonPage_BAU_201;
 
 import pages.CommonPage_BAU_TC205;
 
@@ -15,6 +18,11 @@ import pages.CommonPage_TC203;
 public class PageInitializer extends BaseClass {
 
 	public static CommonPage cP;
+
+     
+	public static CommonPage_BAU_201 cP201;
+	
+
 	public static CommonPage_BAU_TC205 cPTC205;
 
 	public static CommonPageTaylor cPT;
@@ -29,9 +37,11 @@ public class PageInitializer extends BaseClass {
 	
 	public static CommonPage_TC203 cP203;
 
+
 	public static void initialize() {
 
 		cP = new CommonPage();
+		cP201 = new CommonPage_BAU_201();
 
 		cPTC205 = new CommonPage_BAU_TC205();
 
@@ -47,6 +57,7 @@ public class PageInitializer extends BaseClass {
 		Cpb = new CommonPage_BAU_TC305();
 		
 		cP203 = new CommonPage_TC203();
+
 
 	}
 }
