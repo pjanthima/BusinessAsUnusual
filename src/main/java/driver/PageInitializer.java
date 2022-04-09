@@ -7,7 +7,7 @@ import pages.CommonPage;
 import pages.CommonPage_BAU_TC204;
 =======
 import pages.CommonPage_BAU_201;
-
+import pages.CommonPage_BAU_202;
 import pages.CommonPage_BAU_TC205;
 
 >>>>>>> main
@@ -55,6 +55,9 @@ public class PageInitializer extends BaseClass {
 	
 	public static CommonPage_TC203 cP203;
 
+	public static CommonPage_BAU_202 cp;
+
+
 
 	public static void initialize() {
 
@@ -66,7 +69,8 @@ public class PageInitializer extends BaseClass {
 		cP201 = new CommonPage_BAU_201();
 
 		cPTC205 = new CommonPage_BAU_TC205();
-
+		
+		cp = new CommonPage_BAU_202():
 >>>>>>> main
 
 		cPT = new CommonPageTaylor();
