@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import driver.BaseClass;
+import methods.CommonMethods;
 
 public class CommonPage {
 	public CommonPage() {
@@ -12,6 +13,6 @@ public class CommonPage {
 	}
 
 	@FindBy(xpath = "//div[@id='promo-new-session']/button")
-	public WebElement closePopup;
+	public WebElement closePopup;// Tom
 
 }
