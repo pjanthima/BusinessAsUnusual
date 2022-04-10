@@ -14,6 +14,11 @@ public class PageInitializer extends BaseClass {
 		case1 = new CommonPage_BAU_TC206();
 		
 		
+		case1 = new CommonPage_BAU_TC206();
+		
+		
+		
+		
 		
 		
 	}

@@ -78,6 +78,10 @@ public class BAU_TC206 extends CommonMethods {
  	        //8. user click in the Apply button
 	        case1.ApplyforSearchRestaurant.click();
 	       // 9. user will be able to see list of restaurants.
+	        
+	        case1.ApplyforSearchRestaurant .click();
+	        
+	    
 	       
 	        
 	        

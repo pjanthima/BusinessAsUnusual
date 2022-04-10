@@ -58,7 +58,7 @@ public class CommonPage_BAU_TC206 {
         @FindBy(xpath= "//div[@class='shoplocal-results__header-center']")
 		private WebElement  searchResult;
        
-
+   
     
 		public String searchResult() {
 			
