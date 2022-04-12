@@ -3,7 +3,9 @@ package driver;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -54,8 +56,7 @@ public class BaseClass {
 			driver.quit();
 			driver = null;
 		}
-	}
-	
+		}
 
 	static {
 
@@ -74,4 +75,7 @@ public class BaseClass {
 	public static String getProperty(String keyName) {
 		return configFile.getProperty(keyName);
 	}
-}
+
+	
+	}
+

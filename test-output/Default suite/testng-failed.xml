@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="taylormadeskincareWebPage.BAU_TC301">
+      <class name="taylormadeskincareWebPage.BAU_TC305">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="instagramPageOpen"/>
-          <include name="linkedInPageOpen"/>
-          <include name="twitterPageOpen"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- taylormadeskincareWebPage.BAU_TC301 -->
+      </class> <!-- taylormadeskincareWebPage.BAU_TC305 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
