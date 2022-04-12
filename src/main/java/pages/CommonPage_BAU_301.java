@@ -29,6 +29,8 @@ public class CommonPage_BAU_301 {
 	public WebElement twitterIcon;
 	
 	@FindBy(xpath = "//a[@aria-label='Facebook']")
+	
+	
 	private WebElement faceBookIcon;
 
 	public boolean verifyFaceBookIcon() {
