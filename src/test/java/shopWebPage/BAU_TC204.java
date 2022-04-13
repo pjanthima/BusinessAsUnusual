@@ -16,21 +16,18 @@ public class BAU_TC204 extends CommonMethods {
 		BaseClass.getDriver().get(BaseClass.getProperty("url1"));
 		BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
 		BaseClass.getDriver().manage().window().maximize();
+		// click [X] to exit pop up
+		cP.closePopup.click();
+
 	}
 
 	@Test(priority = 1)
 	public void searchForHotel() {
-		// click [X] to exit pop up
-		cP.closePopup.click();
 
 		// click on categories tab
-		cP204.categoriesTab.click();
-
 		// use jsScroll method for visibility
-		cP204.jSScrollDownView();
-
 		// shop travel button
-		click(cP204.shopTravelButton);
+		cP204.clickCategoriesTabsAndClickShopTravelTabs();
 
 		scrollDown(100);
 		// Verify that currently in shop travel page
@@ -81,17 +78,11 @@ public class BAU_TC204 extends CommonMethods {
 
 	@Test(priority = 2)
 	public void searchForFlight() {
-		// click [X] to exit pop up
-		cP.closePopup.click();
 
 		// click on categories tab
-		cP204.categoriesTab.click();
-
 		// use jsScroll method for visibility
-		cP204.jSScrollDownView();
-
 		// shop travel button
-		click(cP204.shopTravelButton);
+		cP204.clickCategoriesTabsAndClickShopTravelTabs();
 
 		scrollDown(100);
 		// Verify that currently in shop travel page

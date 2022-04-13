@@ -22,10 +22,10 @@ public class BAU_TC207 extends CommonMethods{
     public void Test1_BAU_TC207() throws InterruptedException {
         cP.closePopup.click();
         cP.storeMenuElement.click();
-        case1.verifyStorePage();
-        case1.findAStore();
-        case1.clickOnBedBath();
-        Assert.assertEquals(case1.bedBathDealInfoText.getText(), "Deals and Information");
+        case2.verifyStorePage();
+        case2.findAStore();
+        case2.clickOnBedBath();
+        Assert.assertEquals(case2.bedBathDealInfoText.getText(), "Deals and Information");
         
     }
     
@@ -33,8 +33,8 @@ public class BAU_TC207 extends CommonMethods{
     public void Test2_BAU_TC207() throws InterruptedException {
         cP.closePopup.click();
         cP.storeMenuElement.click();
-        case1.verifyStorePage();
-        case1.findAStoreErrorMsg();
+        case2.verifyStorePage();
+        case2.findAStoreErrorMsg();
         
         
     }
@@ -43,17 +43,17 @@ public class BAU_TC207 extends CommonMethods{
     public void Test3_BAU_TC207() throws InterruptedException {
         cP.closePopup.click();
         cP.storeMenuElement.click();
-        case1.verifyStorePage();
-        case1.findAdidasStore();
-        Assert.assertEquals(case1.adidasStorElement.getText(), "Adidas");      
-        case1.clickOnAdidasStore();
-        case1.clickHotDealShopNow();
+        case2.verifyStorePage();
+        case2.findAdidasStore();
+        Assert.assertEquals(case2.adidasStorElement.getText(), "Adidas");      
+        case2.clickOnAdidasStore();
+        case2.clickHotDealShopNow();
         BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
         switchToChildWindow();
-        Assert.assertEquals(true, case1.verifyHotDealEmailElement.isDisplayed());
-        System.out.println(case1.verifyHotDealEmailElement.getText());
+        Assert.assertEquals(true, case2.verifyHotDealEmailElement.isDisplayed());
+        System.out.println(case2.verifyHotDealEmailElement.getText());
         BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
-        case1.inputEmail();
+        case2.inputEmail();
         BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
     }
     

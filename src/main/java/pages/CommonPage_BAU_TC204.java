@@ -9,7 +9,7 @@ import driver.BaseClass;
 import methods.CommonMethods;
 
 public class CommonPage_BAU_TC204 {
-//	                                    	>>>>>>>>>>>>>>>>>>>TOM<<<<<<<<<<<<<<<<<<<<
+//	                    >>>>>>>>>>>>>>>>>>>TOM<<<<<<<<<<<<<<<<<<<<
 	public CommonPage_BAU_TC204() {
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
@@ -122,6 +122,17 @@ public class CommonPage_BAU_TC204 {
 
 	@FindBy(xpath = "//header[@id='header']/div[1]/div/a")
 	private WebElement oneTravelComLogo;
+
+	public void clickCategoriesTabsAndClickShopTravelTabs() {
+		// click on categories tab
+		categoriesTab.click();
+
+		// use jsScroll method for visibility
+		jSScrollDownView();
+
+		// shop travel button
+		CommonMethods.click(shopTravelButton);
+	}
 
 	public boolean verifyOneTravelComLogo() {
 		return oneTravelComLogo.isDisplayed();
