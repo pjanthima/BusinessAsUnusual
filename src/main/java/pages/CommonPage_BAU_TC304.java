@@ -13,6 +13,9 @@ public class CommonPage_BAU_TC304 {
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
 
+	@FindBy(xpath = "//*[@id=\"popup2\"]/span")
+	public WebElement closePopup1;
+	
 	@FindBy(xpath = "//*[@id=\"popup2\"]/span/span")
 	public WebElement closePopup;
 
@@ -56,7 +59,7 @@ public class CommonPage_BAU_TC304 {
 	public WebElement okButton;
 
 
-	public void tripleActMouse() {
+	public void closePopup() {
 
 		Actions actions = new Actions(BaseClass.getDriver());
 		actions.click(closePopup).build().perform();
