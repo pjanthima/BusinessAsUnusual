@@ -1,6 +1,7 @@
 package taylormadeskincareWebPage;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
@@ -9,11 +10,8 @@ import methods.CommonMethods;
 import utilities.BroswerUtilities;
 import utilities.Constants;
 
-@Test(groups = "Smoke")
 public class BAU_TC302 extends CommonMethods {
 
-	
-	
 	@BeforeMethod
 	public void setUp() {
 		BaseClass.getDriver().get(BaseClass.getProperty("url2"));
@@ -163,6 +161,11 @@ public class BAU_TC302 extends CommonMethods {
 		BroswerUtilities.hover(cPG.updatedButton);
 		cPG.updatedButton.click();
 
+	}
+	
+	@AfterMethod
+	public void close() {
+		tearDown();
 	}
 
 }
