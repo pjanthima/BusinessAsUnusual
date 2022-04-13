@@ -9,6 +9,7 @@ import methods.CommonMethods;
 import utilities.BroswerUtilities;
 import utilities.Constants;
 
+@Test(groups = "Smoke")
 public class BAU_TC302 extends CommonMethods {
 
 	

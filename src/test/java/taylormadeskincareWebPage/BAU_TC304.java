@@ -10,7 +10,6 @@ import driver.BaseClass;
 import methods.CommonMethods;
 import utilities.Constants;
 
-@Test(groups = "Smoke")
 public class BAU_TC304 extends CommonMethods {
 
 	@BeforeMethod
@@ -24,7 +23,8 @@ public class BAU_TC304 extends CommonMethods {
 	public void Test1() {
 
 		cPT304.closePopup1.click();
-
+		
+		waitForClickability(cPT304.contactUs);
 		cPT304.contactUs.click();
 
 		Assert.assertEquals(cPT304.phoneNumber.getText(), BaseClass.getProperty("contactus.phoneNumber"));
@@ -35,7 +35,8 @@ public class BAU_TC304 extends CommonMethods {
 	public void Test2() {
 
 		cPT304.closePopup1.click();
-
+		
+		waitForClickability(cPT304.contactUs);
 		cPT304.contactUs.click();
 		Assert.assertEquals(cPT304.needHelp.getText(), BaseClass.getProperty("contactus.needHelp"));
 
@@ -52,7 +53,8 @@ public class BAU_TC304 extends CommonMethods {
 	public void Test3() {
 
 		cPT304.closePopup1.click();
-
+		
+		waitForClickability(cPT304.contactUs);
 		cPT304.contactUs.click();
 		Assert.assertEquals(cPT304.needHelp.getText(), BaseClass.getProperty("contactus.needHelp"));
 
@@ -67,15 +69,14 @@ public class BAU_TC304 extends CommonMethods {
 	public void Test4() {
 
 		cPT304.closePopup1.click();
-
+		
+		waitForClickability(cPT304.contactUs);
 		cPT304.contactUs.click();
 
 		Assert.assertEquals(cPT304.needHelp.getText(), BaseClass.getProperty("contactus.needHelp"));
 		cPT304.name.sendKeys(BaseClass.getProperty("contactus.name"));
 		cPT304.customerEmail.sendKeys(BaseClass.getProperty("contactus.customerEmail"));
 		cPT304.sendButton.click();
-
-		takeScreenshot(".//BAU_TC304_ScreenShot/screen.png");
 
 		cPT304.okButton.click();
 
@@ -85,7 +86,8 @@ public class BAU_TC304 extends CommonMethods {
 	public void Test5() {
 
 		cPT304.closePopup1.click();
-
+		
+		waitForClickability(cPT304.contactUs);
 		cPT304.contactUs.click();
 		Assert.assertEquals(cPT304.needHelp.getText(), BaseClass.getProperty("contactus.needHelp"));
 		cPT304.sendButton.click();

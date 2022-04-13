@@ -12,7 +12,7 @@
 
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="taylormadeskincareWebPage.BAU_TC304" />
+			<class name="taylormadeskincareWebPage.BAU_TC302" />
 			<class name="shopWebPage.BAU_TC204" />
 		</classes>
 	</test> <!-- Test -->
