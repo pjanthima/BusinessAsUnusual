@@ -41,7 +41,9 @@
                 <configuration>
 
                     <suiteXmlFiles>
-                        <suiteXmlFile>parameterTesting.xml</suiteXmlFile>
+                        <suiteXmlFile>SmokeTest1.xml</suiteXmlFile>
+                        <suiteXmlFile>shopPage.xml</suiteXmlFile>
+                        <suiteXmlFile>taylorMadeSkinCare.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <!-- <excludes>
                         <exclude>/excelTest.java</exclude>
