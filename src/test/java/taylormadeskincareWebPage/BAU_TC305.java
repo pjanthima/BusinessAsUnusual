@@ -12,6 +12,7 @@ import driver.BaseClass;
 import methods.CommonMethods;
 import utilities.Constants;
 
+@Test(groups = "Smoke")
 public class BAU_TC305 extends CommonMethods {
 
 	@BeforeMethod
@@ -21,8 +22,8 @@ public class BAU_TC305 extends CommonMethods {
 		BaseClass.getDriver().manage().window().maximize();
 	}
 
-	@Test // (enabled=false)
-	public void Test1() throws InterruptedException {
+	@Test(enabled = true)
+	public void Test1() {
 
 		wait(2);
 		Cpb.ClosePopUP.click();
@@ -58,7 +59,7 @@ public class BAU_TC305 extends CommonMethods {
 
 	}
 
-	@Test // (enabled=false)
+	@Test(enabled = true)
 	public void test2() {
 
 		wait(3);
@@ -125,7 +126,7 @@ public class BAU_TC305 extends CommonMethods {
 
 	}
 
-	@Test // (enabled=false)
+	@Test(enabled = true)
 	public void test3() {
 
 		wait(3);

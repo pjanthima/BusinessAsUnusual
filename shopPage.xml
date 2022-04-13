@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="shopWebPage.BAU_TC206"/>
+      <class name="shopWebPage.BAU_TC205"/>
+      <class name="shopWebPage.BAU_TC207"/>
+      <class name="shopWebPage.BAU_TC202"/>
+      <class name="shopWebPage.BAU_TC201"/>
+      <class name="shopWebPage.BAU_TC204"/>
+      <class name="shopWebPage.BAU_TC203"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
