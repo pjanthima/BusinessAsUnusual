@@ -3,6 +3,7 @@ package taylormadeskincareWebPage;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -12,6 +13,7 @@ import utilities.Constants;
 
 public class BAU_TC301 extends CommonMethods {
 
+	@BeforeMethod
 	@BeforeTest
 	public void setUp() {
 		BaseClass.getDriver().get(BaseClass.getProperty("url2"));
@@ -20,7 +22,7 @@ public class BAU_TC301 extends CommonMethods {
 
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void facebookPageOpen() {
 
 		click(cP301.closePopup);
@@ -30,7 +32,7 @@ public class BAU_TC301 extends CommonMethods {
 
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void instagramPageOpen() {
 
 		click(cP301.closePopup);
@@ -40,7 +42,7 @@ public class BAU_TC301 extends CommonMethods {
 
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void linkedInPageOpen() {
 
 		click(cP301.closePopup);
@@ -49,7 +51,7 @@ public class BAU_TC301 extends CommonMethods {
 
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void twitterPageOpen() {
 
 		click(cP301.closePopup);

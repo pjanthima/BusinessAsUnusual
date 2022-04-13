@@ -1,12 +1,9 @@
 package shopWebPage;
 
-
-
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-
 import org.testng.annotations.Test;
 
 import driver.BaseClass;
@@ -24,7 +21,7 @@ public class BAU_TC203 extends CommonMethods {
 	}
 
 	@Test(priority = 1)
-	public void TestCase1() throws InterruptedException {
+	public void TestCase1() {
 		cP.closePopup.click();
 
 		cP203.searchBox.sendKeys("iphone x");
@@ -41,20 +38,20 @@ public class BAU_TC203 extends CommonMethods {
 	}
 
 	@Test(priority = 2)
-	public void TestCase2() throws InterruptedException {
+	public void TestCase2() {
 		cP.closePopup.click();
 
 		cP203.searchBox.sendKeys("iphone x");
 
 		cP203.searchBtn.click();
+		BaseClass.getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		BaseClass.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		cP203.iPhoneX.click();
 
 	}
 
 	@Test(priority = 3)
-	public void TestCase3() throws InterruptedException {
+	public void TestCase3() {
 		cP.closePopup.click();
 
 		cP203.searchBox.sendKeys("iphone x");
@@ -67,7 +64,6 @@ public class BAU_TC203 extends CommonMethods {
 		BaseClass.getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		cP203.cellPhones.click();
 
-		
 	}
 
 }

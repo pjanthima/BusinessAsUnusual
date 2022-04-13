@@ -10,13 +10,13 @@ import methods.CommonMethods;
 import utilities.Constants;
 
 public class BAU_TC201 extends CommonMethods {
+
 	@BeforeMethod
 	public void setUp() {
 		BaseClass.getDriver().get(BaseClass.getProperty("url1"));
 		BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
 		BaseClass.getDriver().manage().window().maximize();
-	
-	
+
 	}
 
 	@Test(enabled = true)
@@ -27,8 +27,7 @@ public class BAU_TC201 extends CommonMethods {
 		scrollDown(500);
 		jsClick(cP201.colorBlack);
 		jsClick(cP201.iphone6Button);
-		
-		
+
 	}
 
 	@Test(enabled = true)
@@ -37,14 +36,14 @@ public class BAU_TC201 extends CommonMethods {
 		cP201.seacrchBox.sendKeys("shaker bottle");
 		cP201.magnifyingGlass.click();
 		scrollDown(1500);
-		jsClick(cP201.proSeriesButton);		
-  		waitForClickability(cP201.seeMoreButton);
+		jsClick(cP201.proSeriesButton);
+		waitForClickability(cP201.seeMoreButton);
 		jsClick(cP201.seeMoreButton);
 		TakesScreenshot("Test02.//ScreenShot/screen.png");
 		scrollDown(1500);
 		cP201.letterP.click();
 		cP201.proSeriesButton.click();
-		
+
 	}
 
 	@Test(enabled = true)
@@ -54,7 +53,7 @@ public class BAU_TC201 extends CommonMethods {
 		waitForClickability(cP201.PrepacComputerDesk);
 		jsClick(cP201.PrepacComputerDesk);
 		TakesScreenshot("Test04.//ScreenShot/screen.png");
-		
+
 	}
 
 	@Test(enabled = true)
@@ -68,7 +67,6 @@ public class BAU_TC201 extends CommonMethods {
 		jsClick(cP201.disneyButton);
 		cP201.addToCartButton.click();
 		cP201.viewCart_Checkout.click();
-		
 
 	}
 }

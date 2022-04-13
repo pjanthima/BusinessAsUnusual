@@ -2,8 +2,8 @@ package taylormadeskincareWebPage;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -11,6 +11,7 @@ import driver.BaseClass;
 import methods.CommonMethods;
 import utilities.Constants;
 
+@Test(groups = "Smoke")
 public class BAU_TC304 extends CommonMethods {
 
 	@BeforeMethod
@@ -25,7 +26,6 @@ public class BAU_TC304 extends CommonMethods {
 
 		cPT304.popupemail.sendKeys(BaseClass.getProperty("popup"));
 		cPT304.tripleActMouse();
-
 
 		cPT304.contactUs.click();
 		Assert.assertEquals(cPT304.homeSign.getText(), "HOME");
@@ -82,7 +82,9 @@ public class BAU_TC304 extends CommonMethods {
 		cPT304.sendButton.click();
 
 		takeScreenshot(".//BAU_TC304_ScreenShot/screen.png");
+
 		cPT304.okButton.click();
+
 	}
 
 	@Test
@@ -92,12 +94,13 @@ public class BAU_TC304 extends CommonMethods {
 		cPT304.tripleActMouse();
 
 		cPT304.contactUs.click();
-		Assert.assertEquals(cPT304.needHelp.getText(), "Need Help");
+		AssertJUnit.assertEquals(cPT304.needHelp.getText(), "Need Help");
 
 		cPT304.sendButton.click();
 
 		takeScreenshot(".//BAU_TC304_ScreenShot/screen.png");
 		cPT304.okButton.click();
+
 	}
 
 }

@@ -11,7 +11,8 @@ import methods.CommonMethods;
 import utilities.Constants;
 
 public class BAU_TC207 extends CommonMethods{
-    @BeforeMethod
+    
+	@BeforeMethod
     public void setUp() {
         BaseClass.getDriver().get(BaseClass.getProperty("url1"));
         BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);

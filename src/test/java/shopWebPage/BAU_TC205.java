@@ -11,6 +11,7 @@ import utilities.Constants;
 
 public class BAU_TC205 extends CommonMethods {
 
+	
 	@BeforeMethod
 	public void setUp() {
 		BaseClass.getDriver().get(BaseClass.getProperty("url1"));

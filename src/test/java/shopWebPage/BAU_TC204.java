@@ -10,7 +10,9 @@ import driver.BaseClass;
 import methods.CommonMethods;
 import utilities.Constants;
 
+@Test(groups = "Smoke")
 public class BAU_TC204 extends CommonMethods {
+	
 	@BeforeMethod
 	public void setUp() {
 		BaseClass.getDriver().get(BaseClass.getProperty("url1"));

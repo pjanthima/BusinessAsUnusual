@@ -1,9 +1,10 @@
 package taylormadeskincareWebPage;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeMethod;
-
 import org.testng.annotations.Test;
 
 import driver.BaseClass;
@@ -11,8 +12,11 @@ import methods.CommonMethods;
 import utilities.BroswerUtilities;
 import utilities.Constants;
 
+
 public class BAU_TC302 extends CommonMethods {
 
+	
+	
 	@BeforeMethod
 	public void setUp() {
 		BaseClass.getDriver().get(BaseClass.getProperty("url2"));
