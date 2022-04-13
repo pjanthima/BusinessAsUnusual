@@ -23,90 +23,81 @@ public class BAU_TC304 extends CommonMethods {
 	@Test
 	public void Test1() {
 
-		cPT.email.sendKeys("hello");
-		Actions actions = new Actions(BaseClass.getDriver());
-		actions.click(cPT.closePopup).build().perform();
-		actions.doubleClick(cPT.closePopup).build().perform();
+		cPT304.popupemail.sendKeys(BaseClass.getProperty("popup"));
+		cPT304.tripleActMouse();
 
-		cU.contactUs.click();
-		Assert.assertEquals(cU.homeSign.getText(), "HOME");
-		Assert.assertEquals(cU.phoneNumber.getText(), "985 326 1880");
-		Assert.assertEquals(cU.email.getText(), "taylormadeskincare.us@gmail.com");
+
+		cPT304.contactUs.click();
+		Assert.assertEquals(cPT304.homeSign.getText(), "HOME");
+		Assert.assertEquals(cPT304.phoneNumber.getText(), "985 326 1880");
+		Assert.assertEquals(cPT304.email.getText(), "taylormadeskincare.us@gmail.com");
 	}
 
 	@Test
 	public void Test2() {
 
-		cPT.email.sendKeys("hello");
-		Actions actions = new Actions(BaseClass.getDriver());
-		actions.click(cPT.closePopup).build().perform();
-		actions.doubleClick(cPT.closePopup).build().perform();
+		cPT304.popupemail.sendKeys(BaseClass.getProperty("popup"));
+		cPT304.tripleActMouse();
 
-		cU.contactUs.click();
-		Assert.assertEquals(cU.needHelp.getText(), "Need Help");
+		cPT304.contactUs.click();
+		Assert.assertEquals(cPT304.needHelp.getText(), "Need Help");
 
-		cU.name.sendKeys(BaseClass.getProperty("contactus.name"));
-		cU.customerEmail.sendKeys(BaseClass.getProperty("contactus.customerEmail"));
-		cU.subject.sendKeys(BaseClass.getProperty("contactus.subject"));
-		cU.message.sendKeys(BaseClass.getProperty("contactus.message"));
-		cU.sendButton.click();
-		Assert.assertEquals(cU.successful.getText(), "Congratulations!");
-		cU.okButton.click();
+		cPT304.name.sendKeys(BaseClass.getProperty("contactus.name"));
+		cPT304.customerEmail.sendKeys(BaseClass.getProperty("contactus.customerEmail"));
+		cPT304.subject.sendKeys(BaseClass.getProperty("contactus.subject"));
+		cPT304.message.sendKeys(BaseClass.getProperty("contactus.message"));
+		cPT304.sendButton.click();
+		Assert.assertEquals(cPT304.successful.getText(), "Congratulations!");
+		cPT304.okButton.click();
 	}
 
 	@Test
 	public void Test3() {
 
-		cPT.email.sendKeys("hello");
-		Actions actions = new Actions(BaseClass.getDriver());
-		actions.click(cPT.closePopup).build().perform();
-		actions.doubleClick(cPT.closePopup).build().perform();
+		cPT304.popupemail.sendKeys(BaseClass.getProperty("popup"));
+		cPT304.tripleActMouse();
 
-		cU.contactUs.click();
-		Assert.assertEquals(cU.needHelp.getText(), "Need Help");
+		cPT304.contactUs.click();
+		Assert.assertEquals(cPT304.needHelp.getText(), "Need Help");
 
-		cU.name.sendKeys(BaseClass.getProperty("contactus.name"));
-		cU.customerEmail.sendKeys(BaseClass.getProperty("contactus.invalidEmail"));
-		cU.subject.sendKeys(BaseClass.getProperty("contactus.subject"));
-		cU.message.sendKeys(BaseClass.getProperty("contactus.message"));
-		cU.sendButton.click();
+		cPT304.name.sendKeys(BaseClass.getProperty("contactus.name"));
+		cPT304.customerEmail.sendKeys(BaseClass.getProperty("contactus.invalidEmail"));
+		cPT304.subject.sendKeys(BaseClass.getProperty("contactus.subject"));
+		cPT304.message.sendKeys(BaseClass.getProperty("contactus.message"));
+		cPT304.sendButton.click();
 	}
 
 	@Test
 	public void Test4() {
 
-		cPT.email.sendKeys("hello");
-		Actions actions = new Actions(BaseClass.getDriver());
-		actions.click(cPT.closePopup).build().perform();
-		actions.doubleClick(cPT.closePopup).build().perform();
+		cPT304.popupemail.sendKeys(BaseClass.getProperty("popup"));
+		cPT304.tripleActMouse();
 
-		cU.contactUs.click();
-		Assert.assertEquals(cU.needHelp.getText(), "Need Help");
+		cPT304.contactUs.click();
+		Assert.assertEquals(cPT304.needHelp.getText(), "Need Help");
 
-		cU.name.sendKeys(BaseClass.getProperty("contactus.name"));
-		cU.customerEmail.sendKeys(BaseClass.getProperty("contactus.customerEmail"));
+		cPT304.name.sendKeys(BaseClass.getProperty("contactus.name"));
+		cPT304.customerEmail.sendKeys(BaseClass.getProperty("contactus.customerEmail"));
 
-		cU.sendButton.click();
+		cPT304.sendButton.click();
 
 		takeScreenshot(".//BAU_TC304_ScreenShot/screen.png");
-		cU.okButton.click();
+		cPT304.okButton.click();
 	}
 
 	@Test
 	public void Test5() {
 
-		cPT.email.sendKeys("hello");
-		Actions actions = new Actions(BaseClass.getDriver());
-		actions.click(cPT.closePopup).build().perform();
-		actions.doubleClick(cPT.closePopup).build().perform();
+		cPT304.popupemail.sendKeys(BaseClass.getProperty("popup"));
+		cPT304.tripleActMouse();
 
-		cU.contactUs.click();
-		Assert.assertEquals(cU.needHelp.getText(), "Need Help");
+		cPT304.contactUs.click();
+		Assert.assertEquals(cPT304.needHelp.getText(), "Need Help");
 
-		cU.sendButton.click();
+		cPT304.sendButton.click();
 
 		takeScreenshot(".//BAU_TC304_ScreenShot/screen.png");
-		cU.okButton.click();
+		cPT304.okButton.click();
 	}
 
 }

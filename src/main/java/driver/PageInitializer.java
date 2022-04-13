@@ -24,6 +24,7 @@ import pages.CommonPageTaylor;
 import pages.ContactUsPage;
 import pages.CommonpageBAU_TC302;
 import pages.CommonPage_BAU_TC207;
+import pages.CommonPage_BAU_TC304;
 import pages.CommonPage_BAU_TC305;
 import pages.CommonPage_TC203;
 import pages.CommonPage_BAU_TC206;
@@ -32,6 +33,8 @@ import pages.CommonPage_BAU_TC206;
 public class PageInitializer extends BaseClass {
 
 	public static CommonPage cP;
+  
+	public static CommonPage_BAU_TC304 cPT304;
 
 	public static CommonPage_BAU_TC206 case1;
 
@@ -51,8 +54,6 @@ public class PageInitializer extends BaseClass {
 
 	public static CommonPage_BAU_TC205 cPTC205;
 
-	
-	
 	public static CommonPage_TC203 cP203;
 
 	public static CommonPage_BAU_202 cp;
@@ -64,6 +65,8 @@ public class PageInitializer extends BaseClass {
 
 		cP = new CommonPage();
 
+		cPT304 = new CommonPage_BAU_TC304();
+
 		case1 = new CommonPage_BAU_TC206();
 		
 		case1 = new CommonPage_BAU_TC206();
@@ -73,14 +76,10 @@ public class PageInitializer extends BaseClass {
 		cP201 = new CommonPage_BAU_201();
 
 		cPTC205 = new CommonPage_BAU_TC205();
-
 		
 		cp = new CommonPage_BAU_202():
 
-
 		cPT = new CommonPageTaylor();
-
-		cU = new ContactUsPage();
 
 		case1 = new CommonPage_BAU_TC207();
 
