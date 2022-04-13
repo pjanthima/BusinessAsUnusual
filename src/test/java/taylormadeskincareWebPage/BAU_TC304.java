@@ -3,7 +3,6 @@ package taylormadeskincareWebPage;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
-import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -94,7 +93,7 @@ public class BAU_TC304 extends CommonMethods {
 		cPT304.tripleActMouse();
 
 		cPT304.contactUs.click();
-		AssertJUnit.assertEquals(cPT304.needHelp.getText(), "Need Help");
+		Assert.assertEquals(cPT304.needHelp.getText(), "Need Help");
 
 		cPT304.sendButton.click();
 

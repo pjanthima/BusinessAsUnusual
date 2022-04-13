@@ -20,7 +20,7 @@ public class BAU_TC207 extends CommonMethods{
     }
 
     @Test(priority = 1)
-    public void Test1_BAU_TC207() throws InterruptedException {
+    public void Test1_BAU_TC207() {
         cP.closePopup.click();
         cP.storeMenuElement.click();
         case2.verifyStorePage();
@@ -31,7 +31,7 @@ public class BAU_TC207 extends CommonMethods{
     }
     
     @Test(priority = 2)
-    public void Test2_BAU_TC207() throws InterruptedException {
+    public void Test2_BAU_TC207() {
         cP.closePopup.click();
         cP.storeMenuElement.click();
         case2.verifyStorePage();
@@ -41,7 +41,7 @@ public class BAU_TC207 extends CommonMethods{
     }
     
     @Test(priority = 3)
-    public void Test3_BAU_TC207() throws InterruptedException {
+    public void Test3_BAU_TC207() {
         cP.closePopup.click();
         cP.storeMenuElement.click();
         case2.verifyStorePage();

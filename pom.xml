@@ -41,9 +41,10 @@
                 <configuration>
 
                     <suiteXmlFiles>
-                        <suiteXmlFile>SmokeTest1.xml</suiteXmlFile>
+                    	<suiteXmlFile>${xmlSuiteFileName}</suiteXmlFile>
+                        <!--suiteXmlFile>SmokeTest1.xml</suiteXmlFile>
                         <suiteXmlFile>shopPage.xml</suiteXmlFile>
-                        <suiteXmlFile>taylorMadeSkinCare.xml</suiteXmlFile>
+                        <suiteXmlFile>taylorMadeSkinCare.xml</suiteXmlFile-->
                     </suiteXmlFiles>
                     <!-- <excludes>
                         <exclude>/excelTest.java</exclude>

@@ -24,8 +24,6 @@ public class PageInitializer extends BaseClass {
 
 	public static CommonPage_BAU_TC204 cP204;
 
-	public static ContactUsPage cU;
-
 	public static CommonpageBAU_TC302 cPG;
 
 	public static CommonPage_BAU_TC207 case2;
@@ -43,10 +41,10 @@ public class PageInitializer extends BaseClass {
 	public static CommonPage_BAU_301 cP301;
 
 	public static void initialize() {
+		
+		cP = new CommonPage();
 
 		cP301 = new CommonPage_BAU_301();
-
-		cP = new CommonPage();
 
 		cPT304 = new CommonPage_BAU_TC304();
 
