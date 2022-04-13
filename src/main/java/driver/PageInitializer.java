@@ -1,19 +1,16 @@
 package driver;
 
 import pages.CommonPage;
-import pages.CommonPageTaylor;
-import pages.ContactUsPage;
 import pages.CommonpageBAU_TC302;
 import pages.CommonPage_BAU_TC207;
+import pages.CommonPage_BAU_TC304;
 import pages.CommonPage_BAU_TC305;
 
 public class PageInitializer extends BaseClass {
 
 	public static CommonPage cP;
 
-	public static CommonPageTaylor cPT;
-
-	public static ContactUsPage cU;
+	public static CommonPage_BAU_TC304 cPT304;
 
 	public static CommonpageBAU_TC302 cPG;
 
@@ -25,9 +22,9 @@ public class PageInitializer extends BaseClass {
 
 		cP = new CommonPage();
 
-		cPT = new CommonPageTaylor();
+		cPT304 = new CommonPage_BAU_TC304();
 
-		cU = new ContactUsPage();
+		
 
 		case1 = new CommonPage_BAU_TC207();
 		
