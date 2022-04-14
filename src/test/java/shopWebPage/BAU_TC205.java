@@ -28,7 +28,7 @@ public class BAU_TC205 extends CommonMethods {
 //		2. Input "Gloves" in the Search Box in All Departments then press search by click 
 //		on magnifying glass icon
 		wait(3);
-		cPTC205.searchBox.sendKeys("Gloves");
+		cPTC205.searchBox.sendKeys(BaseClass.getProperty("item"));
 		jsClick(cPTC205.magnifyingGlassIcon);
 
 //		3. Click "Add to Cart" for the first item you're looking for ( 1 Quantity)
@@ -75,7 +75,7 @@ public class BAU_TC205 extends CommonMethods {
 //		2. Input "Gloves" in the Search Box in All Departments then press search by click 
 //		on magnifying glass icon
 		wait(3);
-		cPTC205.searchBox.sendKeys("Gloves");
+		cPTC205.searchBox.sendKeys(BaseClass.getProperty("item"));
 		jsClick(cPTC205.magnifyingGlassIcon);
 
 //		3. Click "Add to Cart" for the first item you're looking for ( 2 Quantity)
