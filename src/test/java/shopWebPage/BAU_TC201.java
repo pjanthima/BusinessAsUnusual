@@ -28,7 +28,9 @@ public class BAU_TC201 extends CommonMethods {
 		scrollDown(500);
 		jsClick(cP201.colorBlack);
 		jsClick(cP201.iphone6Button);
-
+		String actualTitle = BaseClass.getDriver().getTitle();
+		String expectedTitle = "Cell Phone at SHOP.COM Electronics";
+		Assert.assertEquals(expectedTitle, actualTitle);
 	}
 
 	@Test(enabled = true)
@@ -44,7 +46,6 @@ public class BAU_TC201 extends CommonMethods {
 		scrollDown(1500);
 		cP201.letterP.click();
 		cP201.proSeriesButton.click();
-
 	}
 
 	@Test(enabled = true)
@@ -54,7 +55,7 @@ public class BAU_TC201 extends CommonMethods {
 		waitForClickability(cP201.PrepacComputerDesk);
 		jsClick(cP201.PrepacComputerDesk);
 		TakesScreenshot("Test04.//ScreenShot/screen.png");
-
+				
 	}
 
 	@Test(enabled = true)
@@ -67,6 +68,7 @@ public class BAU_TC201 extends CommonMethods {
 		TakesScreenshot("Test04.//ScreenShot/screen.png");
 		jsClick(cP201.disneyButton);
 		cP201.addToCartButton.click();
+		cP201.viewCart_Checkout.click(); 
 		cP201.viewCart_Checkout.click();
 
 	}
