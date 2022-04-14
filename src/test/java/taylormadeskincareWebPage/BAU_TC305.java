@@ -32,15 +32,15 @@ public class BAU_TC305 extends CommonMethods {
 			BaseClass.getDriver().manage().window().maximize();
 		}
 
-		@Test//(enabled=false)
-		public void Test1() throws InterruptedException   {
+		@Test(enabled=false)
+		public void Test1()    {
 
 			
-			Thread.sleep(2000);
+			wait(2);
 			Cpb.ClosePopUP.click();
-			Thread.sleep(3000);
+			wait(2);
 			Cpb.SubscriptionPackage.click();
-			Thread.sleep(2000);
+			wait(2);
 			Cpb.SubscribeNowBtn.click();
 			
 			String YourOrderDetail= Cpb.YOurOrderDetail.getText();
@@ -48,19 +48,19 @@ public class BAU_TC305 extends CommonMethods {
 			System.out.println(YourOrderDetail);
 			
 			Cpb.inputName.sendKeys(BaseClass.getProperty("Name"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputEmail.sendKeys(BaseClass.getProperty("Email"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputPhone.sendKeys(BaseClass.getProperty("Phone"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputAddress.sendKeys(BaseClass.getProperty("Address"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputCity.sendKeys(BaseClass.getProperty("City"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputState.sendKeys(BaseClass.getProperty("State"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputCountry.sendKeys(BaseClass.getProperty("Country"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.SubscribeNow.click();
 			
 			String SubscribePaymentPage =Cpb.SubscribePayment.getText();
@@ -70,19 +70,19 @@ public class BAU_TC305 extends CommonMethods {
 			
 			}
 
-		@Test//(enabled=false)
-		public void test2() throws InterruptedException {
+		@Test(enabled=false)
+		public void test2()  {
 			
-			Thread.sleep(3000);
+			wait(2);
 			Cpb.ClosePopUP.click();
 //			Actions act = new Actions(BaseClass.getDriver());
 
 			//Double click on element
 //			WebElement ele = BaseClass.getDriver().findElement(By.xpath("//*[@id='popup2']/span")); 
 //			act.doubleClick(ele).perform();
-			Thread.sleep(3000);
+			wait(2);
 			Cpb.SubscriptionPackage.click();
-			Thread.sleep(2000);
+			wait(2);
 			Cpb.SubscribeNowBtn.click();
 			
 			String YourOrderDetail= Cpb.YOurOrderDetail.getText();
@@ -90,19 +90,19 @@ public class BAU_TC305 extends CommonMethods {
 			System.out.println(YourOrderDetail);
 			
 			Cpb.inputName.sendKeys(BaseClass.getProperty("Name"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputEmail.sendKeys(BaseClass.getProperty("Email"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputPhone.sendKeys(BaseClass.getProperty("Phone"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputAddress.sendKeys(BaseClass.getProperty("Address"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputCity.sendKeys(BaseClass.getProperty("City"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputState.sendKeys(BaseClass.getProperty("State"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.inputCountry.sendKeys(BaseClass.getProperty("Country"));
-			Thread.sleep(1000);
+			wait(2);
 			Cpb.SubscribeNow.click();
 			
 			String SubscribePaymentPage =Cpb.SubscribePayment.getText();
@@ -110,10 +110,10 @@ public class BAU_TC305 extends CommonMethods {
 			System.out.println(SubscribePaymentPage);
 
 			scrollDown(400);
-			Thread.sleep(1000);
+			wait(2);
 			switchToFrame(0);
 			Cpb.PayPalSubscribe.click();
-			Thread.sleep(2000);
+			wait(2);
 			
 			Set<String> ids = BaseClass.getDriver().getWindowHandles();
 	        Iterator<String> it = ids.iterator();
@@ -130,36 +130,39 @@ public class BAU_TC305 extends CommonMethods {
 	
 			}
 		@Test//(enabled=false)
-		public void test3() throws InterruptedException {
+		public void test3() {
 		
-			Thread.sleep(3000);
+			wait(2);
 			Cpb.ClosePopUP.click();
-			Thread.sleep(3000);
+			wait(2);
 //			Double click on element
 //			Actions act = new Actions(BaseClass.getDriver());
 //			WebElement ele = BaseClass.getDriver().findElement(By.xpath("//*[@id='popup2']/span")); 
 //			act.doubleClick(ele).perform();
 			Cpb.FacebookIcon.click();
-			Thread.sleep(2000);
-			Set<String> ids = BaseClass.getDriver().getWindowHandles();
+			wait(2);
+//			Set<String> ids = BaseClass.getDriver().getWindowHandles();
 	        
-	        Iterator<String> it = ids.iterator();
-	        String parentID = it.next();
-	        String childID = it.next();
-	        BaseClass.getDriver().switchTo().window(childID);
+			
+			
+			switchToChildWindow(); 
+//	        Iterator<String> it = ids.iterator();
+//	        String parentID = it.next();
+//	        String childID = it.next();
+//	        BaseClass.getDriver().switchTo().window(childID);
 	        System.out.println("After Switching to Child window >> " + BaseClass.getDriver().getTitle());
-	        Thread.sleep(2000);
+	        wait(2);
 	        String currentUrl =BaseClass.getDriver().getCurrentUrl();
 			String nextUrl = BaseClass.getDriver().getCurrentUrl();
 			System.out.println(currentUrl);
 			System.out.println(nextUrl);
 			Assert.assertTrue(currentUrl.equals(nextUrl));
 	
-			Thread.sleep(3000);
+			wait(2);
 	        Cpb.EmailFacebook.sendKeys(BaseClass.getProperty("EmailAddress"));
-	        Thread.sleep(3000);
+	        wait(2);
 	        Cpb.passwordFacebook.sendKeys(BaseClass.getProperty("passwordFacebook"));
-			Thread.sleep(2000);
+	        wait(2);
 			Cpb.LogInFacebook.click();
 			
 			String FacebookAccount=Cpb.AccountFacebook.getText();
