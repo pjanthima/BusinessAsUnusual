@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import driver.BaseClass;
+import methods.CommonMethods;
 
 public class CommonPage_BAU_TC207 {
   
@@ -13,7 +14,7 @@ public class CommonPage_BAU_TC207 {
             PageFactory.initElements(BaseClass.getDriver(), this);
         }
         
-        @FindBy(xpath = "//*[@id=\"page\"]/section/section/section[2]/div[1]/h1")
+        @FindBy(xpath = "//*[@id='page']/section/section/section[2]/div[1]/h1")
         public WebElement allStoreText;
         
         @FindBy(xpath = "//a[@href='/stores-a-z?hsh=2']")
@@ -100,12 +101,16 @@ public class CommonPage_BAU_TC207 {
         }
         
         public void clickHotDealShopNow() {
-            hotDealShopNoWebElement.click();
+            CommonMethods.jsClick(hotDealShopNoWebElement);
         }
         
         public void inputEmail() {
             hotDealEmailElement.sendKeys(BaseClass.getProperty("hotDealEmail"));
-            iWantDealElement.click();
+            CommonMethods.jsClick(iWantDealElement);
+        }
+        
+        public void veryAdidasPage(){
+            
         }
        
         
