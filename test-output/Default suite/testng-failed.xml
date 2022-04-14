@@ -5,8 +5,10 @@
     <classes>
       <class name="taylormadeskincareWebPage.BAU_TC305">
         <methods>
+          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="test3"/>
+          <include name="test2"/>
         </methods>
       </class> <!-- taylormadeskincareWebPage.BAU_TC305 -->
     </classes>
