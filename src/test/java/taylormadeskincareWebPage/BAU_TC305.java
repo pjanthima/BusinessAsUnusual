@@ -1,11 +1,9 @@
 package taylormadeskincareWebPage;
 
 import java.util.concurrent.TimeUnit;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import driver.BaseClass;
 import methods.CommonMethods;
 import utilities.Constants;
@@ -21,7 +19,7 @@ public class BAU_TC305 extends CommonMethods {
 
 	@Test
 	public void Test1() {
-
+// Jane
 		wait(2);
 		Cpb.ClosePopUP.click();
 		wait(2);
@@ -52,6 +50,7 @@ public class BAU_TC305 extends CommonMethods {
 		String SubscribePaymentPage = Cpb.SubscribePayment.getText();
 		Assert.assertEquals(BaseClass.getProperty("SubscribePayment"), SubscribePaymentPage);
 		System.out.println(SubscribePaymentPage);
+
 	}
 
 	@Test
@@ -101,6 +100,7 @@ public class BAU_TC305 extends CommonMethods {
 		System.out.println(currentUrl);
 		System.out.println(nextUrl);
 		Assert.assertTrue(currentUrl.equals(nextUrl));
+
 	}
 
 	@Test
