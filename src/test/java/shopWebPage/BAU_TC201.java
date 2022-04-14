@@ -1,13 +1,8 @@
 package shopWebPage;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,11 +11,13 @@ import methods.CommonMethods;
 import utilities.Constants;
 
 public class BAU_TC201 extends CommonMethods {
+
 	@BeforeMethod
 	public void setUp() {
 		BaseClass.getDriver().get(BaseClass.getProperty("url1"));
 		BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
 		BaseClass.getDriver().manage().window().maximize();
+
 	}
 
 	@Test(enabled = true)
@@ -34,8 +31,6 @@ public class BAU_TC201 extends CommonMethods {
 		String actualTitle = BaseClass.getDriver().getTitle();
 		String expectedTitle = "Cell Phone at SHOP.COM Electronics";
 		Assert.assertEquals(expectedTitle, actualTitle);
-		
-		
 	}
 
 	@Test(enabled = true)
@@ -44,14 +39,13 @@ public class BAU_TC201 extends CommonMethods {
 		cP201.seacrchBox.sendKeys("shaker bottle");
 		cP201.magnifyingGlass.click();
 		scrollDown(1500);
-		jsClick(cP201.proSeriesButton);		
-  		waitForClickability(cP201.seeMoreButton);
+		jsClick(cP201.proSeriesButton);
+		waitForClickability(cP201.seeMoreButton);
 		jsClick(cP201.seeMoreButton);
 		TakesScreenshot("Test02.//ScreenShot/screen.png");
 		scrollDown(1500);
 		cP201.letterP.click();
 		cP201.proSeriesButton.click();
-		
 	}
 
 	@Test(enabled = true)
@@ -61,9 +55,7 @@ public class BAU_TC201 extends CommonMethods {
 		waitForClickability(cP201.PrepacComputerDesk);
 		jsClick(cP201.PrepacComputerDesk);
 		TakesScreenshot("Test04.//ScreenShot/screen.png");
-		
-		
-		
+				
 	}
 
 	@Test(enabled = true)
@@ -77,7 +69,12 @@ public class BAU_TC201 extends CommonMethods {
 		jsClick(cP201.disneyButton);
 		cP201.addToCartButton.click();
 		cP201.viewCart_Checkout.click(); 
-		
+		cP201.viewCart_Checkout.click();
 
+	}
+	
+	@AfterMethod
+	public void close() {
+		tearDown();
 	}
 }

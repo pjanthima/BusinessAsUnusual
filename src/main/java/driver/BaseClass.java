@@ -7,8 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import org.testng.annotations.AfterMethod;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constants;
 
@@ -48,7 +46,7 @@ public class BaseClass {
 		return driver;
 	}
 
-	@AfterMethod
+//	@AfterMethod
 	public static void tearDown() {
 		if (driver != null) {
 			driver.quit();
@@ -73,4 +71,5 @@ public class BaseClass {
 	public static String getProperty(String keyName) {
 		return configFile.getProperty(keyName);
 	}
+
 }
