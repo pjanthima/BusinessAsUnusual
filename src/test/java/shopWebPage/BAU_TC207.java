@@ -1,5 +1,7 @@
 package shopWebPage;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
@@ -23,6 +25,7 @@ public class BAU_TC207 extends CommonMethods{
     public void Test1_BAU_TC207() {
         cP.closePopup.click();
         cP.storeMenuElement.click();
+        Assert.assertEquals(case2.allStoreText.getText(), BaseClass.getProperty("allStore"));
         case2.verifyStorePage();
         case2.findAStore();
         case2.clickOnBedBath();
@@ -34,7 +37,7 @@ public class BAU_TC207 extends CommonMethods{
     public void Test2_BAU_TC207() {
         cP.closePopup.click();
         cP.storeMenuElement.click();
-        case2.verifyStorePage();
+        Assert.assertEquals(case2.allStoreText.getText(), BaseClass.getProperty("allStore"));
         case2.findAStoreErrorMsg();
         
         
@@ -44,18 +47,24 @@ public class BAU_TC207 extends CommonMethods{
     public void Test3_BAU_TC207() {
         cP.closePopup.click();
         cP.storeMenuElement.click();
-        case2.verifyStorePage();
+        Assert.assertEquals(case2.allStoreText.getText(), BaseClass.getProperty("allStore"));
         case2.findAdidasStore();
         Assert.assertEquals(case2.adidasStorElement.getText(), "Adidas");      
         case2.clickOnAdidasStore();
+        wait(3);
         case2.clickHotDealShopNow();
-        BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
+        wait(3);
+      
         switchToChildWindow();
         Assert.assertEquals(true, case2.verifyHotDealEmailElement.isDisplayed());
         System.out.println(case2.verifyHotDealEmailElement.getText());
-        BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
+        wait(3);
+        
         case2.inputEmail();
-        BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
+        //CommonMethods.takeScreenshot("veryEmail");
+        assertEquals(BaseClass.getProperty("adidaspage"), BaseClass.getDriver().getTitle());
+        
+      
     }
     
     
