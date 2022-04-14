@@ -2,6 +2,12 @@ package taylormadeskincareWebPage;
 
 import java.util.concurrent.TimeUnit;
 import org.testng.Assert;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import driver.BaseClass;
@@ -113,7 +119,7 @@ public class BAU_TC305 extends CommonMethods {
 		wait(2);
 
 		switchToChildWindow();
-
+    
 		System.out.println("After Switching to Child window >> " + BaseClass.getDriver().getTitle());
 		wait(2);
 		String currentUrl = BaseClass.getDriver().getCurrentUrl();
@@ -132,7 +138,11 @@ public class BAU_TC305 extends CommonMethods {
 		String FacebookAccount = Cpb.AccountFacebook.getText();
 		Assert.assertEquals(BaseClass.getProperty("myAccount"), FacebookAccount);
 		System.out.println(FacebookAccount);
-		System.out.println(FacebookAccount);
 
+	}
+
+	@AfterMethod
+	public void close() {
+		tearDown();
 	}
 }
