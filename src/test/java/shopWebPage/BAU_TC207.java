@@ -20,6 +20,8 @@ public class BAU_TC207 extends CommonMethods {
 		BaseClass.getDriver().get(BaseClass.getProperty("url1"));
 		BaseClass.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
 		BaseClass.getDriver().manage().window().maximize();
+		cP.closePopup.click();
+	    cP.storeMenuElement.click();
 	}
 
 	@AfterMethod
@@ -29,48 +31,36 @@ public class BAU_TC207 extends CommonMethods {
 
     @Test(priority = 1)
     public void Test1_BAU_TC207() {
-        cP.closePopup.click();
-        cP.storeMenuElement.click();
+        
         Assert.assertEquals(case2.allStoreText.getText(), BaseClass.getProperty("allStore"));
-        case2.verifyStorePage();
-        case2.findAStore();
-        case2.clickOnBedBath();
-        Assert.assertEquals(case2.bedBathDealInfoText.getText(), "Deals and Information");
+        case2.findAStoreBedBathBeyond();
+        Assert.assertTrue(case2.bedBathTextElement.isDisplayed());
+        case2.clickOnBedBathStore();
+        waitForVisibility(case2.bedBathDealInfoText);
+        Assert.assertTrue(case2.bedBathDealInfoText.isDisplayed());
         
     }
     
     @Test(priority = 2)
     public void Test2_BAU_TC207() {
-        cP.closePopup.click();
-        cP.storeMenuElement.click();
-        Assert.assertEquals(case2.allStoreText.getText(), BaseClass.getProperty("allStore"));
+     
         case2.findAStoreErrorMsg();
-        
-        
+        waitForVisibility(case2.errorMessagElement);
+        Assert.assertEquals(case2.errorMessagElement.getText(), BaseClass.getProperty("errorSorryMsg"));    
     }
     
     @Test(priority = 3)
     public void Test3_BAU_TC207() {
-        cP.closePopup.click();
-        cP.storeMenuElement.click();
         Assert.assertEquals(case2.allStoreText.getText(), BaseClass.getProperty("allStore"));
-        case2.findAdidasStore();
-        Assert.assertEquals(case2.adidasStorElement.getText(), "Adidas");      
+        case2.findAdidasStore();   
+        Assert.assertEquals(case2.adidasStorElement.getText(), BaseClass.getProperty("adidasStore"));      
         case2.clickOnAdidasStore();
-        wait(3);
         case2.clickHotDealShopNow();
-        wait(3);
-      
         switchToChildWindow();
         Assert.assertEquals(true, case2.verifyHotDealEmailElement.isDisplayed());
-        System.out.println(case2.verifyHotDealEmailElement.getText());
-        wait(3);
-        
-        case2.inputEmail();
-        //CommonMethods.takeScreenshot("veryEmail");
+         case2.inputEmail();
         assertEquals(BaseClass.getProperty("adidaspage"), BaseClass.getDriver().getTitle());
         
-      
     }
     
 }
